@@ -6,11 +6,16 @@ CURRENT_UID := $(shell id -u)
 CURRENT_GID := $(shell id -g)
 
 #
-# If doc-base or phd exist as siblings to the current directory, add those as
-# volumes to our Docker runs.
+# If the English manual or build tools exist as siblings, use those local
+# checkouts instead of the copies bundled in the image.
 #
 
 PATHS := -v ${PWD}:/var/www/extensions
+ifneq ($(wildcard ../en/manual.xml),)
+	PATHS += -v ${PWD}/../en:/var/www/en
+else ifneq ($(wildcard ../doc-en/manual.xml),)
+	PATHS += -v ${PWD}/../doc-en:/var/www/en
+endif
 ifneq ($(wildcard ../doc-base/LICENSE),)
 	PATHS += -v ${PWD}/../doc-base:/var/www/doc-base
 endif

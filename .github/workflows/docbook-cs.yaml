@@ -46,6 +46,12 @@ jobs:
           path: "${{ matrix.language }}"
           fetch-depth: 50
 
+      - name: "Checkout php/doc-en"
+        uses: "actions/checkout@v7"
+        with:
+          path: "en"
+          repository: "php/doc-en"
+
       - name: "Checkout php/doc-base"
         uses: "actions/checkout@v7"
         with:
@@ -83,7 +89,8 @@ jobs:
             --disable-libxml-check \
             --enable-xml-details \
             --redirect-stderr-to-stdout \
-            --with-base-lang=${{ matrix.language }}
+            --with-base-lang=en \
+            --with-lang=${{ matrix.language }}
 
       - name: "Install docbook-cs"
         working-directory: "docbook-cs"

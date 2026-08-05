@@ -6,13 +6,15 @@ WORKSPACE="$(cd "$(dirname "$0")/.." && pwd)"
 PARENT="$(dirname "$WORKSPACE")"
 OWNER="$(stat -c '%U' "$WORKSPACE")"
 
-# Clone doc-base, phd, and web-php as siblings of doc-en.
+# Clone the English base manual and build tools as siblings of doc-extensions.
+if [ -L "$PARENT/en" ] && [ "$(readlink -f "$PARENT/en")" = "$WORKSPACE" ]; then
+  sudo -u "$OWNER" rm "$PARENT/en"
+fi
+[ -d "$PARENT/en" ]       || sudo -u "$OWNER" git -C "$PARENT" clone --depth 1 https://github.com/php/doc-en.git en
 [ -d "$PARENT/doc-base" ] || sudo -u "$OWNER" git -C "$PARENT" clone --depth 1 https://github.com/php/doc-base.git
 [ -d "$PARENT/phd" ]      || sudo -u "$OWNER" git -C "$PARENT" clone --depth 1 https://github.com/php/phd.git
 [ -d "$PARENT/web-php" ]  || sudo -u "$OWNER" git -C "$PARENT" clone --depth 1 https://github.com/php/web-php.git
-
-# doc-base's configure.php looks for the language source as a sibling directory
-[ -e "$PARENT/en" ] || sudo -u "$OWNER" ln -s "$WORKSPACE" "$PARENT/en"
+[ -e "$PARENT/extensions" ] || sudo -u "$OWNER" ln -s "$WORKSPACE" "$PARENT/extensions"
 
 # Xdebug degrades performance and is not needed for the build, so disable it by default.
 rm -f /usr/local/etc/php/conf.d/xdebug.ini

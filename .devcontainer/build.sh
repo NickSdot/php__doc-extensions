@@ -14,7 +14,8 @@ php ../doc-base/configure.php \
     --disable-libxml-check \
     --enable-xml-details \
     --redirect-stderr-to-stdout \
-    --with-base-lang=extensions
+    --with-base-lang=en \
+    --with-lang=extensions
 
 php -d memory_limit=512M ../phd/render.php \
     --docbook ../doc-base/.manual.xml \
