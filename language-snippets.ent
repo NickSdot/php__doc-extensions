@@ -1,3 +1,1433 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Language snippets should be placed here -->
+<!-- Language snippets required by the third-party extension manual -->
+
+<!ENTITY note.no-windows '<note xmlns="http://docbook.org/ns/docbook"><simpara>This function is not
+implemented on Windows platforms.</simpara></note>'>
+
+<!ENTITY note.no-windows.extension '<note xmlns="http://docbook.org/ns/docbook"><simpara>This extension is not
+available on Windows platforms.</simpara></note>'>
+
+<!ENTITY warn.experimental '<warning xmlns="http://docbook.org/ns/docbook"><simpara>This extension is
+<emphasis>EXPERIMENTAL</emphasis>. The behaviour of this extension including
+the names of its functions and any other documentation surrounding this
+extension may change without notice in a future release of PHP.
+This extension should be used at your own risk.</simpara></warning>'>
+
+<!ENTITY warn.deprecated.function-7-1-0.removed-7-2-0 '<warning
+xmlns="http://docbook.org/ns/docbook"><simpara>This function has been
+<emphasis>DEPRECATED</emphasis> as of PHP 7.1.0 and
+<emphasis>REMOVED</emphasis> as of PHP 7.2.0. Relying on this function
+is highly discouraged.</simpara></warning>'>
+
+<!ENTITY warn.removed.function-7-0-0 '<warning
+xmlns="http://docbook.org/ns/docbook"><simpara>This function was
+<emphasis>REMOVED</emphasis> in PHP 7.0.0.</simpara></warning>'>
+
+<!ENTITY warn.experimental.func '<warning xmlns="http://docbook.org/ns/docbook"><simpara>This function is
+<emphasis>EXPERIMENTAL</emphasis>. The behaviour of this function, its name, and
+surrounding documentation may change without notice in a future release of PHP.
+This function should be used at your own risk.
+</simpara></warning>'>
+
+<!ENTITY warn.imaprecodeyaz '<warning xmlns="http://docbook.org/ns/docbook"><simpara>The <link
+linkend="book.imap">IMAP</link>, <link linkend="book.recode">recode</link> and
+<link linkend="book.yaz">YAZ</link>
+extensions cannot be used in conjunction, because they
+share the same internal symbols. Note: Yaz 2.0 and above does not suffer from this problem.</simpara></warning>'>
+
+<!ENTITY warn.undocumented.func '<warning xmlns="http://docbook.org/ns/docbook"><simpara>This function is
+currently not documented; only its argument list is available.
+</simpara></warning>'>
+
+<!ENTITY warn.deprecated.feature.7-1-0.removed.7-2-0.alternatives '
+<simpara xmlns="http://docbook.org/ns/docbook">
+ This feature was <emphasis>DEPRECATED</emphasis> in PHP 7.1.0, and
+ <emphasis>REMOVED</emphasis> in PHP 7.2.0.
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
+ Alternatives to this feature include:
+</simpara>
+'>
+
+<!ENTITY warn.deprecated.function.7-1-0.removed.7-2-0.alternatives '
+<simpara xmlns="http://docbook.org/ns/docbook">
+ This function was <emphasis>DEPRECATED</emphasis> in PHP 7.1.0, and
+ <emphasis>REMOVED</emphasis> in PHP 7.2.0.
+</simpara>
+<simpara xmlns="http://docbook.org/ns/docbook">
+ Alternatives to this function include:
+</simpara>
+'>
+
+<!ENTITY no.function.parameters '<simpara xmlns="http://docbook.org/ns/docbook">This function has no parameters.</simpara>'>
+
+<!ENTITY example.outputs '<simpara xmlns="http://docbook.org/ns/docbook">The above example will output:</simpara>'>
+
+<!ENTITY example.outputs.similar '<simpara xmlns="http://docbook.org/ns/docbook">The above example will output
+something similar to:</simpara>'>
+
+<!ENTITY sort.callback.description '<simpara xmlns="http://docbook.org/ns/docbook">
+ &return.callbacksort;
+</simpara>
+&callback.cmp;
+<caution xmlns="http://docbook.org/ns/docbook">
+ <simpara>
+  Returning <emphasis>non-integer</emphasis> values from the comparison
+  function, such as <type>float</type>, will result in an internal cast to
+  <type>int</type> of the callback&apos;s return value. So values such as
+  <literal>0.99</literal> and <literal>0.1</literal> will both be cast to an
+  integer value of <literal>0</literal>, which will compare such values as equal.
+ </simpara>
+</caution>'>
+
+<!ENTITY info.deprecated.alias 'For backward compatibility, the following
+deprecated alias may be used: '>
+
+<!ENTITY info.function.alias 'This function is an alias of: '>
+
+<!ENTITY info.method.alias 'This method is an alias of: '>
+
+<!ENTITY ext.windows.path.dll 'In order for this extension to work, there are
+<acronym xmlns="http://docbook.org/ns/docbook">DLL</acronym> files that must be available to the Windows
+system <envar xmlns="http://docbook.org/ns/docbook">PATH</envar>. For information on how to do this, see the
+<acronym xmlns="http://docbook.org/ns/docbook">FAQ</acronym> entitled "<link
+ xmlns="http://docbook.org/ns/docbook" linkend="faq.installation.addtopath">How do I add my PHP directory to the PATH
+on Windows</link>". Although copying DLL
+files from the PHP folder into the Windows system directory also works
+(because the system directory is by default in the system&apos;s
+<envar xmlns="http://docbook.org/ns/docbook">PATH</envar>), this is not recommended.
+<emphasis xmlns="http://docbook.org/ns/docbook">This extension requires the following files to be in the
+<envar>PATH</envar>:</emphasis> '>
+
+<!ENTITY style.oop 'Object-oriented style'>
+
+<!ENTITY style.procedural 'Procedural style'>
+
+<!ENTITY return.type.true '<row xmlns="http://docbook.org/ns/docbook">
+ <entry>8.2.0</entry>
+ <entry>
+  The return type is &true; now; previously, it was <type>bool</type>.
+ </entry>
+</row>'>
+
+<!ENTITY return.falseforfailure ' or &false; on failure'>
+
+<!ENTITY return.success 'Returns &true; on success&return.falseforfailure;.'>
+
+<!ENTITY return.void 'No value is returned.'>
+
+<!ENTITY return.true.always 'Always returns &true;.'>
+
+<!ENTITY return.callbacksort 'The comparison function must return an integer less than, equal to, or greater than zero if the first argument is considered to be respectively less than, equal to, or greater than the second.'>
+
+<!ENTITY return.falseproblem '<warning xmlns="http://docbook.org/ns/docbook"><simpara>This function may
+return Boolean &false;, but may also return a non-Boolean value which
+evaluates to &false;. Please read the section on <link
+linkend="language.types.boolean">Booleans</link> for more
+information. Use <link linkend="language.operators.comparison">the ===
+operator</link> for testing the return value of this
+function.</simpara></warning>'>
+
+<!ENTITY mcrypt.parameter.cipher '<simpara xmlns="http://docbook.org/ns/docbook">One of the <constant>MCRYPT_ciphername</constant> constants, or the name of the algorithm as string.</simpara>'>
+
+<!ENTITY mcrypt.parameter.iv.strict '<simpara xmlns="http://docbook.org/ns/docbook">Used for the initialization in CBC, CFB, OFB modes, and in some algorithms in STREAM mode. If the provided IV size is not supported by the chaining mode or no IV was provided, but the chaining mode requires one, the function will emit a warning and return &false;.</simpara>'>
+
+<!ENTITY mcrypt.parameter.mode '<simpara xmlns="http://docbook.org/ns/docbook">One of the <constant>MCRYPT_MODE_modename</constant> constants, or one of the following strings: "ecb", "cbc", "cfb", "ofb", "nofb" or "stream".</simpara>'>
+
+<!ENTITY memcached.note.delete-time '<note xmlns="http://docbook.org/ns/docbook"><simpara>
+       As of memcached 1.3.0 (released 2009) this feature is no longer
+       supported. Passing a non-zero <parameter>time</parameter> will cause
+       the deletion to fail. <methodname>Memcached::getResultCode</methodname>
+       will return <constant>MEMCACHED_INVALID_ARGUMENTS</constant>.
+      </simpara></note>
+'>
+
+<!ENTITY memcached.parameter.expiration 'The expiration time, defaults to 0. See <link
+ linkend="memcached.expiration" xmlns="http://docbook.org/ns/docbook">Expiration Times</link> for more info.'>
+
+<!ENTITY memcached.parameter.server_key 'The key identifying the server to store the value on or retrieve it from. Instead of hashing on the actual key for the item, we hash on the server key when deciding which memcached server to talk to. This allows related items to be grouped together on a single server for efficiency with multi operations.'>
+
+<!ENTITY memcached.parameter.items 'An array of key/value pairs to store on the server.'>
+
+<!ENTITY memcached.parameter.key 'The key under which to store the value.'>
+
+<!ENTITY memcached.parameter.value 'The value to store.'>
+
+<!ENTITY memcached.result.getresultcode 'Use <methodname xmlns="http://docbook.org/ns/docbook">Memcached::getResultCode</methodname> if necessary.'>
+
+<!ENTITY memcached.result.delete-multi '<simpara xmlns="http://docbook.org/ns/docbook">
+   Returns an array indexed by <parameter>keys</parameter>. Each element
+   is &true; if the corresponding key was deleted, or one of the
+   <constant>Memcached::RES_<replaceable>*</replaceable></constant> constants if the corresponding deletion
+   failed.
+   </simpara>
+  <simpara xmlns="http://docbook.org/ns/docbook">
+   The <methodname>Memcached::getResultCode</methodname> will return
+   the result code for the last executed delete operation, that is, the delete
+   operation for the last element of <parameter>keys</parameter>.
+  </simpara>
+'>
+
+<!ENTITY rnp.parameter.ffi-description 'The FFI object returned by <function xmlns="http://docbook.org/ns/docbook">rnp_ffi_create</function>.'>
+
+<!ENTITY rnp.parameter.key-format 'The key format of the data (GPG, KBX, G10).'>
+
+<!ENTITY rnp.parameter.loadsave-flags 'See <constant xmlns="http://docbook.org/ns/docbook">RNP_LOAD_SAVE_<replaceable>*</replaceable></constant> flags description.'>
+
+<!ENTITY gearman.parameter.host 'The job server host name.'>
+
+<!ENTITY gearman.parameter.port 'The job server port.'>
+
+<!ENTITY gearman.parameter.functionname 'A registered function the worker is to execute'>
+
+<!ENTITY gearman.parameter.workload 'Serialized data to be processed'>
+
+<!ENTITY gearman.parameter.context 'Application context to associate with a task'>
+
+<!ENTITY gearman.parameter.unique 'A unique ID used to identify a particular task'>
+
+<!ENTITY gearman.parameter.jobhandle 'The job handle assigned by the Gearman server'>
+
+<!ENTITY gearman.parameter.callback '<varlistentry xmlns="http://docbook.org/ns/docbook">
+ <term><parameter>callback</parameter></term>
+ <listitem>
+  <simpara>
+   A function or method to call.
+   It should return a valid <link linkend="gearman.constants">Gearman return value</link>.
+  </simpara>
+  <simpara>
+   If no return statement is present, it defaults to <constant>GEARMAN_SUCCESS</constant>.
+  </simpara>
+  <methodsynopsis>
+   <type>int</type><methodname><replaceable>callback</replaceable></methodname>
+   <methodparam><type>GearmanTask</type><parameter>task</parameter></methodparam>
+   <methodparam><type>mixed</type><parameter>context</parameter></methodparam>
+  </methodsynopsis>
+  <variablelist>
+   <varlistentry>
+    <term><parameter>task</parameter></term>
+    <listitem>
+     <simpara>
+      The task this callback is called for.
+     </simpara>
+    </listitem>
+   </varlistentry>
+   <varlistentry>
+    <term><parameter>context</parameter></term>
+    <listitem>
+     <simpara>
+      Whatever has been passed to <methodname>GearmanClient::addTask</methodname> (or equivalent method) as <parameter>context</parameter>.
+     </simpara>
+    </listitem>
+   </varlistentry>
+  </variablelist>
+ </listitem>
+</varlistentry>'>
+
+<!ENTITY gearman.note.callback '<note xmlns="http://docbook.org/ns/docbook">
+ <simpara>
+  The callback will only be triggered for tasks that are added (e.g. by calling <methodname>GearmanClient::addTask</methodname>)
+  after calling this method.
+ </simpara>
+</note>'>
+
+<!ENTITY gnupg.identifier '<simpara xmlns="http://docbook.org/ns/docbook">The gnupg identifier, from a call to
+<function>gnupg_init</function> or <classname>gnupg</classname>.</simpara>'>
+
+<!ENTITY gnupg.fingerprint '<simpara xmlns="http://docbook.org/ns/docbook">The fingerprint key.</simpara>'>
+
+<!ENTITY oauth.callback.error 'Emits an <constant xmlns="http://docbook.org/ns/docbook">E_ERROR</constant> level
+error if the callback function cannot be called, or was not specified.'>
+
+<!ENTITY oauth.changelog.error.null 'Previously returned &null; on failure, instead of &false;.'>
+
+<!ENTITY ps.note.visible '<simpara xmlns="http://docbook.org/ns/docbook">The note will not be visible if the document
+is printed or viewed but it will show up if the document is converted to
+pdf by either Acrobat Distiller™ or Ghostview.</simpara>'>
+
+<!ENTITY no.config '<simpara xmlns="http://docbook.org/ns/docbook">This extension has no configuration directives defined in &php.ini;.</simpara>'>
+
+<!ENTITY ini.descriptions.title '<simpara xmlns="http://docbook.org/ns/docbook">Here&apos;s a short explanation of
+the configuration directives.</simpara>'>
+
+<!ENTITY extension.runtime '<simpara xmlns="http://docbook.org/ns/docbook">
+The behaviour of these functions is affected by settings in &php.ini;.
+</simpara>'>
+
+<!ENTITY ini.php.constants 'For further details and definitions of the
+INI_* modes, see the <xref xmlns="http://docbook.org/ns/docbook" linkend="configuration.changes.modes"/>.'>
+
+<!ENTITY extension.constants '<simpara xmlns="http://docbook.org/ns/docbook">
+The constants below are defined by this extension, and
+will only be available when the extension has either
+been compiled into PHP or dynamically loaded at runtime.
+</simpara>'>
+
+<!ENTITY pdo.driver-constants '<simpara xmlns="http://docbook.org/ns/docbook">The constants below are defined by
+this driver, and will only be available when the extension has been either
+compiled into PHP or dynamically loaded at runtime. In addition, these
+driver-specific constants should only be used if you are using this driver.
+Using driver-specific attributes with another driver may result in
+unexpected behaviour. <function>PDO::getAttribute</function> may be used to
+obtain the <constant>PDO::ATTR_DRIVER_NAME</constant> attribute to check the
+driver, if your code can run against multiple drivers.</simpara>'>
+
+<!ENTITY pecl.moved 'This &link.pecl; extension is not bundled with PHP.'>
+
+<!ENTITY pecl.info 'Information for installing this PECL extension may be
+found in the manual chapter titled <link xmlns="http://docbook.org/ns/docbook" linkend="install.pecl">Installation
+of PECL extensions</link>. Additional information such as new releases,
+downloads, source files, maintainer information, and a CHANGELOG, can be
+located here: '>
+
+<!ENTITY pecl.info.dead 'This extension is considered unmaintained and dead. However, the source code for
+this extension is still available within <acronym xmlns="http://docbook.org/ns/docbook">PECL</acronym>
+<acronym xmlns="http://docbook.org/ns/docbook">SVN</acronym> here: '>
+
+<!ENTITY pecl.info.dead.git 'This extension is considered unmaintained and dead. However, the source code for
+this extension is still available within <acronym xmlns="http://docbook.org/ns/docbook">PECL</acronym>
+<acronym xmlns="http://docbook.org/ns/docbook">GIT</acronym> here: '>
+
+<!ENTITY pecl.windows.download 'A <acronym xmlns="http://docbook.org/ns/docbook">DLL</acronym> for this
+<acronym xmlns="http://docbook.org/ns/docbook">PECL</acronym> extension is currently unavailable. See also the
+<link xmlns="http://docbook.org/ns/docbook" linkend="install.windows.building">building on Windows</link>
+section.'>
+
+<!ENTITY pecl.windows.download.avail 'Windows binaries (<acronym xmlns="http://docbook.org/ns/docbook">DLL</acronym> files)
+for this <acronym xmlns="http://docbook.org/ns/docbook">PECL</acronym> extension are available from the PECL website.'>
+
+<!ENTITY pecl.moved-ver 'This extension has been moved to the &link.pecl;
+repository and is no longer bundled with PHP as of PHP '>
+
+<!ENTITY pecl.moving.to.pie '<note xmlns="http://docbook.org/ns/docbook">
+ <simpara>
+  PHP Installer for Extensions (<acronym>PIE</acronym>) is a new tool that will deprecate PECL.
+  We recommend using PIE to install extensions.
+  Find out more at <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://github.com/php/pie">https://github.com/php/pie</link>
+ </simpara>
+</note>'>
+
+<!ENTITY warn.pecl.unmaintained '<warning xmlns="http://docbook.org/ns/docbook">
+ <simpara>This extension is <emphasis>unmaintained</emphasis>.</simpara>
+</warning>'>
+
+<!ENTITY sqlsafemode '<link xmlns="http://docbook.org/ns/docbook" linkend="ini.sql.safe-mode">SQL safe mode</link>'>
+
+<!ENTITY database.field-case '<note xmlns="http://docbook.org/ns/docbook"><simpara>Field names returned by this function
+are <emphasis>case-sensitive</emphasis>.</simpara></note>'>
+
+<!ENTITY database.fetch-null '<note xmlns="http://docbook.org/ns/docbook"><simpara>This function sets NULL fields to
+the PHP &null; value.</simpara></note>'>
+
+<!ENTITY mysql.linkid.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
+<parameter>link_identifier</parameter></term><listitem><simpara>The MySQL connection. If the
+link identifier is not specified, the last link opened by
+<function>mysql_connect</function> is assumed. If no such link is found, it
+will try to create one as if <function>mysql_connect</function> had been called
+with no arguments. If no connection is found or established, an
+<constant>E_WARNING</constant> level error is generated.</simpara></listitem>
+</varlistentry>'>
+
+<!ENTITY mysql.linkid-noreopen.description '<varlistentry
+xmlns="http://docbook.org/ns/docbook"><term>
+<parameter>link_identifier</parameter></term><listitem><simpara>The MySQL connection. If the
+link identifier is not specified, the last link opened by
+<function>mysql_connect</function> is assumed. If no connection is found or
+established, an <constant>E_WARNING</constant> level error is
+generated.</simpara></listitem></varlistentry>'>
+
+<!ENTITY mysql.result.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
+<parameter>result</parameter></term><listitem><simpara>The result <type>resource</type> that
+is being evaluated. This result comes from a call to
+<function>mysql_query</function>.</simpara></listitem></varlistentry>'>
+
+<!ENTITY mysql.field-offset.req.description '<varlistentry xmlns="http://docbook.org/ns/docbook"><term>
+<parameter>field_offset</parameter></term><listitem><simpara>The numerical field offset. The
+<parameter>field_offset</parameter> starts at <literal>0</literal>. If
+<parameter>field_offset</parameter> does not exist, an error of level
+<constant>E_WARNING</constant> is also issued.</simpara></listitem></varlistentry>'>
+
+<!ENTITY mysql.alternative.note '<simpara xmlns="http://docbook.org/ns/docbook">This extension was deprecated in PHP 5.5.0, and it was removed in PHP 7.0.0.
+Instead, the <link linkend="book.mysqli">MySQLi</link> or <link linkend="ref.pdo-mysql">PDO_MySQL</link> extension should be used.
+See also <link linkend="mysqlinfo.api.choosing">MySQL: choosing an API</link> guide.
+Alternatives to this function include:</simpara>'>
+
+<!ENTITY mysql.alternative.note.4-3-0 '<simpara xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 4.3.0, and it
+and the entire <link linkend="book.mysql">original MySQL extension</link> was removed in PHP 7.0.0.
+Instead, use either the actively developed <link linkend="book.mysqli">MySQLi</link> or <link linkend="ref.pdo-mysql">PDO_MySQL</link> extensions.
+See also the <link linkend="mysqlinfo.api.choosing">MySQL: choosing an API</link> guide.
+Alternatives to this function include:</simpara>'>
+
+<!ENTITY mysql.alternative.note.5-3-0 '<simpara xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 5.3.0, and it
+and the entire <link linkend="book.mysql">original MySQL extension</link> was removed in PHP 7.0.0.
+Instead, use either the actively developed <link linkend="book.mysqli">MySQLi</link> or <link linkend="ref.pdo-mysql">PDO_MySQL</link> extensions.
+See also the <link linkend="mysqlinfo.api.choosing">MySQL: choosing an API</link> guide.
+Alternatives to this function include:</simpara>'>
+
+<!ENTITY mysql.alternative.note.5-4-0 '<simpara xmlns="http://docbook.org/ns/docbook">This function was deprecated in PHP 5.4.0, and it
+and the entire <link linkend="book.mysql">original MySQL extension</link> was removed in PHP 7.0.0.
+Instead, use either the actively developed <link linkend="book.mysqli">MySQLi</link> or <link linkend="ref.pdo-mysql">PDO_MySQL</link> extensions.
+See also the <link linkend="mysqlinfo.api.choosing">MySQL: choosing an API</link> guide.
+Alternatives to this function include:</simpara>'>
+
+<!ENTITY mysql.close.connections.result.sets '<simpara xmlns="http://docbook.org/ns/docbook">
+Open non-persistent MySQL connections and result sets are automatically destroyed when a
+PHP script finishes its execution. So, while explicitly closing open
+connections and freeing result sets is optional, doing so is recommended.
+This will immediately return resources to PHP and MySQL, which can
+improve performance. For related information, see
+<link linkend="language.types.resource.self-destruct">freeing resources</link></simpara>'>
+
+<!ENTITY xattr.namespace '<simpara xmlns="http://docbook.org/ns/docbook">Extended attributes have two different namespaces: user
+and root. The user namespace is available to all users, while the root namespace
+is available only to users with root privileges. xattr operates on the user
+namespace  by default, but this can be changed with the
+<parameter>flags</parameter> parameter.</simpara>'>
+
+<!ENTITY listendand ' and'>
+
+<!ENTITY note.runkit.selfmanipulation '<note xmlns="http://docbook.org/ns/docbook"><simpara>This function cannot
+be used to manipulate the currently running (or chained) method.</simpara>
+</note>'>
+
+<!ENTITY note.runkit.internal-override '<note xmlns="http://docbook.org/ns/docbook"><simpara>By default, only
+userspace functions may be removed, renamed, or modified.  In order to
+override internal functions, you must enable the
+<literal>runkit.internal_override</literal> setting in &php.ini;.</simpara>
+</note>'>
+
+<!ENTITY note.ssh2.subsystem.publickey '<note xmlns="http://docbook.org/ns/docbook"><simpara>The public key subsystem
+is used for managing public keys on a server to which the client is
+<emphasis>already</emphasis> authenticated.  To authenticate to a remote system
+using public key authentication, use the
+<function>ssh2_auth_pubkey_file</function> function instead.</simpara></note>'>
+
+<!ENTITY stomp.param.link "<varlistentry xmlns='http://docbook.org/ns/docbook'><term><parameter>link</parameter></term><listitem><simpara>Procedural style only: The stomp link identifier returned by <function>stomp_connect</function>.</simpara></listitem></varlistentry>">
+
+<!ENTITY stomp.param.headers "<varlistentry xmlns='http://docbook.org/ns/docbook'><term><parameter>headers</parameter></term><listitem><simpara>Associative array containing the additional headers (example: receipt).</simpara></listitem></varlistentry>">
+
+<!ENTITY stomp.note.transaction "<note xmlns='http://docbook.org/ns/docbook'><simpara>A transaction header may be specified, indicating that the message acknowledgment should be part of the named transaction.</simpara></note>">
+
+<!ENTITY stomp.note.sync "<tip xmlns='http://docbook.org/ns/docbook'><simpara>Stomp is inherently asynchronous. Synchronous communication can be implemented adding a receipt header. This will cause methods to not return anything until the server has acknowledged receipt of the message or until read timeout was reached.</simpara></tip>">
+
+<!ENTITY svn.relativepath "<note xmlns='http://docbook.org/ns/docbook'><simpara>Relative paths will be resolved as if the current working directory was the one that contains the PHP binary. To use the calling script&apos;s working directory, use <function>realpath</function> or dirname(__FILE__).</simpara></note>">
+
+<!ENTITY svn.referto.status 'Refer to <link xmlns="http://docbook.org/ns/docbook" linkend="svn.constants.status">status constants</link> for possible values.'>
+
+<!ENTITY svn.referto.type 'Refer to <link xmlns="http://docbook.org/ns/docbook" linkend="svn.constants.type">type constants</link> for possible values.'>
+
+<!ENTITY fann.ann.description '<simpara xmlns="http://docbook.org/ns/docbook">Neural network <type>resource</type>.</simpara>'>
+
+<!ENTITY fann.train.description '<simpara xmlns="http://docbook.org/ns/docbook">Neural network training data <type>resource</type>.</simpara>'>
+
+<!ENTITY fann.errdat.description '<simpara xmlns="http://docbook.org/ns/docbook">Either neural network <type>resource</type> or neural network trainining data <type>resource</type>.</simpara>'>
+
+<!ENTITY fann.return.void '<simpara xmlns="http://docbook.org/ns/docbook">No value is returned.</simpara>'>
+
+<!ENTITY fann.return.bool '<simpara xmlns="http://docbook.org/ns/docbook">Returns &true; on success, or &false; otherwise.</simpara>'>
+
+<!ENTITY fann.return.ann '<simpara xmlns="http://docbook.org/ns/docbook"> Returns a neural network <type>resource</type> on success, or &false; on error.</simpara>'>
+
+<!ENTITY fann.return.train '<simpara xmlns="http://docbook.org/ns/docbook"> Returns a train data <type>resource</type> on success, or &false; on error.</simpara>'>
+
+<!ENTITY fann.note.function.fann-2.2 '<note xmlns="http://docbook.org/ns/docbook"><simpara>This function is only available if the fann extension has been build against libfann &gt;= 2.2.</simpara></note>'>
+
+<!ENTITY imagick.return.success 'Returns &true; on success.'>
+
+<!ENTITY imagick.imagick.throws 'Throws ImagickException on error.'>
+
+<!ENTITY imagick.method.available.0x629 'This method is available if Imagick has been compiled against ImageMagick version 6.2.9 or newer.'>
+
+<!ENTITY imagick.method.available.0x631 'This method is available if Imagick has been compiled against ImageMagick version 6.3.1 or newer.'>
+
+<!ENTITY imagick.method.available.0x632 'This method is available if Imagick has been compiled against ImageMagick version 6.3.2 or newer.'>
+
+<!ENTITY imagick.method.available.0x636 'This method is available if Imagick has been compiled against ImageMagick version 6.3.6 or newer.'>
+
+<!ENTITY imagick.method.available.0x637 'This method is available if Imagick has been compiled against ImageMagick version 6.3.7 or newer.'>
+
+<!ENTITY imagick.method.available.0x638 'This method is available if Imagick has been compiled against ImageMagick version 6.3.8 or newer.'>
+
+<!ENTITY imagick.method.available.0x639 'This method is available if Imagick has been compiled against ImageMagick version 6.3.9 or newer.'>
+
+<!ENTITY imagick.method.available.0x640 'This method is available if Imagick has been compiled against ImageMagick version 6.4.0 or newer.'>
+
+<!ENTITY imagick.method.available.0x644 'This method is available if Imagick has been compiled against ImageMagick version 6.4.4 or newer.'>
+
+<!ENTITY imagick.method.available.0x645 'This method is available if Imagick has been compiled against ImageMagick version 6.4.5 or newer.'>
+
+<!ENTITY imagick.method.available.0x647 'This method is available if Imagick has been compiled against ImageMagick version 6.4.7 or newer.'>
+
+<!ENTITY imagick.method.available.0x649 'This method is available if Imagick has been compiled against ImageMagick version 6.4.9 or newer.'>
+
+<!ENTITY imagick.method.available.0x657 'This method is available if Imagick has been compiled against ImageMagick version 6.5.7 or newer.'>
+
+<!ENTITY imagick.method.not.available.0x700 'This method is not available if Imagick has been compiled against ImageMagick version 7.0.0 or newer.'>
+
+<!ENTITY imagick.constant.available 'This constant is available if Imagick has been compiled against ImageMagick version'>
+
+<!ENTITY imagick.deprecated.function-3-4-4 '<warning xmlns="http://docbook.org/ns/docbook"><simpara>This function has been <emphasis>DEPRECATED</emphasis> as of Imagick 3.4.4. Relying on this function is highly discouraged.</simpara></warning>'>
+
+<!ENTITY imagick.default.channel.info 'Defaults to <constant xmlns="http://docbook.org/ns/docbook">Imagick::CHANNEL_DEFAULT</constant>. Refer to this list of <link xmlns="http://docbook.org/ns/docbook" linkend="imagick.constants.channel">channel constants</link>'>
+
+<!ENTITY imagick.parameter.fuzz 'The amount of fuzz. For example, set fuzz to 10 and the color red at intensities of 100 and 102 respectively are now interpreted as the same color.'>
+
+<!ENTITY imagick.parameter.channel 'Provide any channel constant that is valid for your channel mode. To apply to more than one channel, combine <link xmlns="http://docbook.org/ns/docbook" linkend="imagick.constants.channel">channel constants</link> using bitwise operators. &imagick.default.channel.info;'>
+
+<!ENTITY imagick.parameter.alpha 'The level of transparency: 1.0 is fully opaque and 0.0 is fully transparent.'>
+
+<!ENTITY imagick.imagickexception.throw 'Throw an
+<classname xmlns="http://docbook.org/ns/docbook">ImagickException</classname> on error.'>
+
+<!ENTITY imagick.bestfit.note '<note xmlns="http://docbook.org/ns/docbook">
+ <simpara>
+  The behavior of the parameter <parameter>bestfit</parameter> changed in Imagick 3.0.0.
+  Before this version given dimensions 400x400 an image of dimensions 200x150 would be
+  left untouched. In Imagick 3.0.0 and later the image would be scaled up to size 400x300 as
+  this is the "best fit" for the given dimensions. If <parameter>bestfit</parameter>
+  parameter is used both width and height must be given.
+ </simpara>
+</note>'>
+
+<!ENTITY libxml.required '<simpara xmlns="http://docbook.org/ns/docbook">
+ This extension requires the <link linkend="book.libxml">libxml</link> PHP extension.
+ This means passing the <option role="configure">--with-libxml</option>,
+ or prior to PHP 7.4 the <option role="configure">--enable-libxml</option>,
+ configuration flag, although this is implicitly accomplished because libxml
+ is enabled by default.
+</simpara>'>
+
+<!ENTITY inotify.instance.description 'Resource returned by
+<function xmlns="http://docbook.org/ns/docbook">inotify_init</function>'>
+
+<!ENTITY gmagick.gmagickexception.throw 'Throws an
+<classname xmlns="http://docbook.org/ns/docbook">GmagickException</classname> on error.'>
+
+<!ENTITY eio.callback.proto '<para xmlns="http://docbook.org/ns/docbook">
+<parameter xmlns="http://docbook.org/ns/docbook">callback</parameter> function is called when the request is done.
+It should match the following prototype: <programlisting role="php"><![CDATA[
+void callback(mixed $data, int $result[, resource $req]);
+]]></programlisting>
+<variablelist xmlns="http://docbook.org/ns/docbook">
+<varlistentry xmlns="http://docbook.org/ns/docbook">
+<term><parameter>data</parameter></term>
+<listitem><simpara>is custom data passed to the request.</simpara></listitem>
+</varlistentry>
+<varlistentry xmlns="http://docbook.org/ns/docbook">
+<term><parameter>result</parameter></term>
+<listitem><simpara>request-specific result value; basically, the value returned by corresponding
+system call.</simpara></listitem>
+</varlistentry>
+<varlistentry xmlns="http://docbook.org/ns/docbook">
+<term><parameter>req</parameter></term>
+<listitem><simpara>is optional request resource which can be used with functions like <function>eio_get_last_error</function>.</simpara></listitem>
+</varlistentry>
+</variablelist>
+</para>
+'>
+
+<!ENTITY eio.request.pri.values '<simpara
+xmlns="http://docbook.org/ns/docbook">The request priority: <constant
+xmlns="http://docbook.org/ns/docbook">EIO_PRI_DEFAULT</constant>, <constant
+xmlns="http://docbook.org/ns/docbook">EIO_PRI_MIN</constant>, <constant
+xmlns="http://docbook.org/ns/docbook">EIO_PRI_MAX</constant>, or &null;.
+If &null; passed, <parameter
+xmlns="http://docbook.org/ns/docbook">pri</parameter> internally is set to
+<constant xmlns="http://docbook.org/ns/docbook">EIO_PRI_DEFAULT</constant>.
+</simpara>
+'>
+
+<!ENTITY eio.warn.relpath '<warning
+xmlns="http://docbook.org/ns/docbook"><simpara xmlns="http://docbook.org/ns/docbook">Avoid relative
+paths</simpara></warning>
+'>
+
+<!ENTITY trader.arg.array.of.real 'Array of real values.'>
+
+<!ENTITY trader.arg.array.of.real.high 'High price, array of real values.'>
+
+<!ENTITY trader.arg.array.of.real.low 'Low price, array of real values.'>
+
+<!ENTITY trader.arg.array.of.real.close 'Closing price, array of real values.'>
+
+<!ENTITY trader.arg.array.of.real.open 'Opening price, array of real values.'>
+
+<!ENTITY trader.arg.array.of.real.volume 'Volume traded, array of real values.'>
+
+<!ENTITY trader.arg.array.of.real.periods 'Array of real values.'>
+
+<!ENTITY trader.arg.penetration 'Percentage of penetration of a candle within another candle.'>
+
+<!ENTITY trader.arg.vfactor 'Volume Factor. Valid range from 1 to 0.'>
+
+<!ENTITY trader.arg.time.period 'Number of period. Valid range from 2 to 100000.'>
+
+<!ENTITY trader.arg.fast.period 'Number of period for the fast MA. Valid range from 2 to 100000.'>
+
+<!ENTITY trader.arg.slow.period 'Number of period for the slow MA. Valid range from 2 to 100000.'>
+
+<!ENTITY trader.arg.signal.period 'Smoothing for the signal line (nb of period). Valid range from 1 to 100000.'>
+
+<!ENTITY trader.arg.fastk.period 'Time period for building the Fast-K line. Valid range from 1 to 100000.'>
+
+<!ENTITY trader.arg.fastd.period 'Smoothing for making the Fast-D line. Valid range from 1 to 100000, usually set to 3.'>
+
+<!ENTITY trader.arg.slowk.period 'Smoothing for making the Slow-K line. Valid range from 1 to 100000, usually set to 3.'>
+
+<!ENTITY trader.arg.slowd.period 'Smoothing for making the Slow-D line. Valid range from 1 to 100000.'>
+
+<!ENTITY trader.arg.min.period 'Value less than minimum will be changed to Minimum period. Valid range from 2 to 100000'>
+
+<!ENTITY trader.arg.max.period 'Value higher than minimum will be changed to Maximum period. Valid range from 2 to 100000'>
+
+<!ENTITY trader.arg.ma.type 'Type of Moving Average. <link xmlns="http://docbook.org/ns/docbook" linkend="trader.constants">TRADER_MA_TYPE_*</link> series of constants should be used.'>
+
+<!ENTITY trader.arg.fast.ma.type 'Type of Moving Average for fast MA. <link xmlns="http://docbook.org/ns/docbook" linkend="trader.constants">TRADER_MA_TYPE_*</link> series of constants should be used.'>
+
+<!ENTITY trader.arg.slow.ma.type 'Type of Moving Average for slow MA. <link xmlns="http://docbook.org/ns/docbook" linkend="trader.constants">TRADER_MA_TYPE_*</link> series of constants should be used.'>
+
+<!ENTITY trader.arg.fastd.ma.type 'Type of Moving Average for Fast-D. <link xmlns="http://docbook.org/ns/docbook" linkend="trader.constants">TRADER_MA_TYPE_*</link> series of constants should be used.'>
+
+<!ENTITY trader.arg.slowd.ma.type 'Type of Moving Average for Slow-D. <link xmlns="http://docbook.org/ns/docbook" linkend="trader.constants">TRADER_MA_TYPE_*</link> series of constants should be used.'>
+
+<!ENTITY trader.arg.slowk.ma.type 'Type of Moving Average for Slow-K. <link xmlns="http://docbook.org/ns/docbook" linkend="trader.constants">TRADER_MA_TYPE_*</link> series of constants should be used.'>
+
+<!ENTITY trader.arg.signal.ma.type 'Type of Moving Average for signal line. <link xmlns="http://docbook.org/ns/docbook" linkend="trader.constants">TRADER_MA_TYPE_*</link> series of constants should be used.'>
+
+<!ENTITY trader.arg.nbdevup 'Deviation multiplier for upper band. Valid range from <link xmlns="http://docbook.org/ns/docbook" linkend="constant.trader-real-min">TRADER_REAL_MIN</link> to <link xmlns="http://docbook.org/ns/docbook" linkend="constant.trader-real-max">TRADER_REAL_MAX</link>.'>
+
+<!ENTITY trader.arg.nbdevdn 'Deviation multiplier for lower band. Valid range from <link xmlns="http://docbook.org/ns/docbook" linkend="constant.trader-real-min">TRADER_REAL_MIN</link> to <link xmlns="http://docbook.org/ns/docbook" linkend="constant.trader-real-max">TRADER_REAL_MAX</link>.'>
+
+<!ENTITY trader.arg.fast.limit 'Upper limit use in the adaptive algorithm. Valid range from 0.01 to 0.99.'>
+
+<!ENTITY trader.arg.slow.limit 'Lower limit use in the adaptive algorithm. Valid range from 0.01 to 0.99.'>
+
+<!ENTITY mongodb.changelog.class-removed '
+       <row xmlns="http://docbook.org/ns/docbook">
+        <entry>PECL mongodb 2.0.0</entry>
+        <entry>
+         This class was removed.
+        </entry>
+       </row>
+'>
+
+<!ENTITY mongodb.changelog.function-removed '
+       <row xmlns="http://docbook.org/ns/docbook">
+        <entry>PECL mongodb 2.0.0</entry>
+        <entry>
+         This function was removed.
+        </entry>
+       </row>
+'>
+
+<!ENTITY mongodb.changelog.method-removed '
+       <row xmlns="http://docbook.org/ns/docbook">
+        <entry>PECL mongodb 2.0.0</entry>
+        <entry>
+         This method was removed.
+        </entry>
+       </row>
+'>
+
+<!ENTITY mongodb.changelog.serializable-interface-removed '
+       <row xmlns="http://docbook.org/ns/docbook">
+        <entry>PECL mongodb 2.0.0</entry>
+        <entry>
+         <simpara>
+          This class no longer implements the
+          <interfacename>Serializable</interfacename> interface.
+         </simpara>
+        </entry>
+       </row>
+'>
+
+<!ENTITY mongodb.changelog.tentative-return-types '
+       <row xmlns="http://docbook.org/ns/docbook">
+        <entry>PECL mongodb 1.15.0</entry>
+        <entry>
+         Return types for methods are declared as tentative on PHP 8.0 and newer,
+         triggering deprecation notices in code that implements this interface
+         without declaring the appropriate return types. The <code>#[ReturnTypeWillChange]</code>
+         attribute can be added to silence the deprecation notice.
+        </entry>
+       </row>
+'>
+
+<!ENTITY mongodb.changelog.tentative-return-types-enforced '
+       <row xmlns="http://docbook.org/ns/docbook">
+        <entry>PECL mongodb 2.0.0</entry>
+        <entry>
+         Return types previously declared as tentative are now enforced.
+        </entry>
+       </row>
+'>
+
+<!ENTITY mongodb.changelog.throw-unacknowledged-write '
+       <row xmlns="http://docbook.org/ns/docbook">
+        <entry>PECL mongodb 2.0.0</entry>
+        <entry>
+         <simpara>
+          This method now throws an exception when called for an unacknowledged write instead of returning &null;.
+         </simpara>
+        </entry>
+       </row>
+'>
+
+<!ENTITY mongodb.option.collation '
+         <row xmlns="http://docbook.org/ns/docbook">
+          <entry>collation</entry>
+          <entry><type class="union"><type>array</type><type>object</type></type></entry>
+          <entry>
+           <simpara>
+            <link xlink:href="&url.mongodb.docs.collation;" xmlns:xlink="http://www.w3.org/1999/xlink">Collation</link> allows users to specify language-specific rules for string comparison, such as rules for lettercase and accent marks. When specifying collation, the <literal>"locale"</literal> field is mandatory; all other collation fields are optional. For descriptions of the fields, see <link xlink:href="&url.mongodb.docs.collation;#collation-document" xmlns:xlink="http://www.w3.org/1999/xlink">Collation Document</link>.
+           </simpara>
+           <simpara>
+            If the collation is unspecified but the collection has a default collation, the operation uses the collation specified for the collection. If no collation is specified for the collection or for the operation, MongoDB uses the simple binary comparison used in prior versions for string comparisons.
+           </simpara>
+           <simpara>
+            This option is available in MongoDB 3.4+ and will result in an exception at execution time if specified for an older server version.
+           </simpara>
+          </entry>
+         </row>
+'>
+
+<!ENTITY mongodb.option.let '
+         <row xmlns="http://docbook.org/ns/docbook">
+          <entry>let</entry>
+          <entry><type class="union"><type>array</type><type>object</type></type></entry>
+          <entry>
+           <simpara>
+            Map of parameter names and values. Values must be constant or closed expressions that do not reference document fields. Parameters can then be accessed as variables in an aggregate expression context (e.g. <literal>$$var</literal>).
+           </simpara>
+           <simpara>
+            This option is available in MongoDB 5.0+ and will result in an exception at execution time if specified for an older server version.
+           </simpara>
+          </entry>
+         </row>
+'>
+
+<!ENTITY mongodb.option.encryption.keyVaultClient '
+         <row xmlns="http://docbook.org/ns/docbook">
+          <entry>keyVaultClient</entry>
+          <entry><classname>MongoDB\Driver\Manager</classname></entry>
+          <entry>The Manager used to route data key queries to a separate MongoDB cluster. By default, the current Manager and cluster is used.</entry>
+         </row>
+'>
+
+<!ENTITY mongodb.option.encryption.keyVaultNamespace '
+         <row xmlns="http://docbook.org/ns/docbook">
+          <entry>keyVaultNamespace</entry>
+          <entry><type>string</type></entry>
+          <entry>A fully qualified namespace (e.g. <literal>"databaseName.collectionName"</literal>) denoting the collection that contains all data keys used for encryption and decryption. This option is required.</entry>
+         </row>
+'>
+
+<!ENTITY mongodb.option.encryption.kmsProviders '
+         <row xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <entry>kmsProviders</entry>
+          <entry><type>array</type></entry>
+          <entry>
+           <simpara>
+            A document containing the configuration for one or more KMS providers, which are used to encrypt data keys. Supported providers include <literal>"aws"</literal>, <literal>"azure"</literal>, <literal>"gcp"</literal>, <literal>"kmip"</literal>, and <literal>"local"</literal> and at least one must be specified.
+           </simpara>
+           <simpara>
+            If an empty document is specified for <literal>"aws"</literal>,
+            <literal>"azure"</literal>, or <literal>"gcp"</literal>, the driver
+            will attempt to configure the provider using
+            <link xlink:href="&url.mongodb.specs;/blob/master/source/client-side-encryption/client-side-encryption.rst#automatic-credentials">Automatic Credentials</link>.
+           </simpara>
+           <simpara>
+            The format for <literal>"aws"</literal> is as follows:
+           </simpara>
+           <programlisting role="javascript">
+<![CDATA[
+aws: {
+    accessKeyId: <string>,
+    secretAccessKey: <string>,
+    sessionToken: <optional string>
+}
+]]>
+           </programlisting>
+           <simpara>
+            The format for <literal>"azure"</literal> is as follows:
+           </simpara>
+           <programlisting role="javascript">
+<![CDATA[
+azure: {
+    tenantId: <string>,
+    clientId: <string>,
+    clientSecret: <string>,
+    identityPlatformEndpoint: <optional string> // Defaults to "login.microsoftonline.com"
+}
+]]>
+           </programlisting>
+           <simpara>
+            The format for <literal>"gcp"</literal> is as follows:
+           </simpara>
+           <programlisting role="javascript">
+<![CDATA[
+gcp: {
+    email: <string>,
+    privateKey: <base64 string>|<MongoDB\BSON\Binary>,
+    endpoint: <optional string> // Defaults to "oauth2.googleapis.com"
+}
+]]>
+           </programlisting>
+           <simpara>
+            The format for <literal>"kmip"</literal> is as follows:
+           </simpara>
+           <programlisting role="javascript">
+<![CDATA[
+kmip: {
+    endpoint: <string>
+}
+]]>
+           </programlisting>
+           <simpara>
+            The format for <literal>"local"</literal> is as follows:
+           </simpara>
+           <programlisting role="javascript">
+<![CDATA[
+local: {
+    // 96-byte master key used to encrypt/decrypt data keys
+    key: <base64 string>|<MongoDB\BSON\Binary>
+}
+]]>
+           </programlisting>
+          </entry>
+         </row>
+'>
+
+<!ENTITY mongodb.option.encryption.masterKey-options-by-provider '
+  <para xmlns="http://docbook.org/ns/docbook">
+   <table>
+    <title><literal>"aws"</literal> provider options</title>
+    <tgroup cols="3">
+     <thead>
+      <row>
+       <entry>Option</entry>
+       <entry>Type</entry>
+       <entry>Description</entry>
+      </row>
+     </thead>
+     <tbody>
+      <row>
+       <entry>region</entry>
+       <entry>string</entry>
+       <entry>Required.</entry>
+      </row>
+      <row>
+       <entry>key</entry>
+       <entry>string</entry>
+       <entry>Required. The Amazon Resource Name (ARN) to the AWS customer master key (CMK).</entry>
+      </row>
+      <row>
+       <entry>endpoint</entry>
+       <entry>string</entry>
+       <entry>Optional. An alternate host identifier to send KMS requests to. May include port number.</entry>
+      </row>
+     </tbody>
+    </tgroup>
+   </table>
+  </para>
+  <para xmlns="http://docbook.org/ns/docbook">
+   <table>
+    <title><literal>"azure"</literal> provider options</title>
+    <tgroup cols="3">
+     <thead>
+      <row>
+       <entry>Option</entry>
+       <entry>Type</entry>
+       <entry>Description</entry>
+      </row>
+     </thead>
+     <tbody>
+      <row>
+       <entry>keyVaultEndpoint</entry>
+       <entry>string</entry>
+       <entry>Required. Host with optional port (e.g. "example.vault.azure.net").</entry>
+      </row>
+      <row>
+       <entry>keyName</entry>
+       <entry>string</entry>
+       <entry>Required.</entry>
+      </row>
+      <row>
+       <entry>keyVersion</entry>
+       <entry>string</entry>
+       <entry>Optional. A specific version of the named key. Defaults to using the key&apos;s primary version.</entry>
+      </row>
+     </tbody>
+    </tgroup>
+   </table>
+  </para>
+  <para xmlns="http://docbook.org/ns/docbook">
+   <table>
+    <title><literal>"gcp"</literal> provider options</title>
+    <tgroup cols="3">
+     <thead>
+      <row>
+       <entry>Option</entry>
+       <entry>Type</entry>
+       <entry>Description</entry>
+      </row>
+     </thead>
+     <tbody>
+      <row>
+       <entry>projectId</entry>
+       <entry>string</entry>
+       <entry>Required.</entry>
+      </row>
+      <row>
+       <entry>location</entry>
+       <entry>string</entry>
+       <entry>Required.</entry>
+      </row>
+      <row>
+       <entry>keyRing</entry>
+       <entry>string</entry>
+       <entry>Required.</entry>
+      </row>
+      <row>
+       <entry>keyName</entry>
+       <entry>string</entry>
+       <entry>Required.</entry>
+      </row>
+      <row>
+       <entry>keyVersion</entry>
+       <entry>string</entry>
+       <entry>Optional. A specific version of the named key. Defaults to using the key&apos;s primary version.</entry>
+      </row>
+      <row>
+       <entry>endpoint</entry>
+       <entry>string</entry>
+       <entry>Optional. Host with optional port. Defaults to "cloudkms.googleapis.com".</entry>
+      </row>
+     </tbody>
+    </tgroup>
+   </table>
+  </para>
+  <para xmlns="http://docbook.org/ns/docbook">
+   <table>
+    <title><literal>"kmip"</literal> provider options</title>
+    <tgroup cols="3">
+     <thead>
+      <row>
+       <entry>Option</entry>
+       <entry>Type</entry>
+       <entry>Description</entry>
+      </row>
+     </thead>
+     <tbody>
+      <row>
+       <entry>keyId</entry>
+       <entry>string</entry>
+       <entry>Optional. Unique identifier to a 96-byte KMIP secret data managed object. If unspecified, the driver creates a random 96-byte KMIP secret data managed object.</entry>
+      </row>
+      <row>
+       <entry>endpoint</entry>
+       <entry>string</entry>
+       <entry>Optional. Host with optional port.</entry>
+      </row>
+      <row>
+       <entry>delegated</entry>
+       <entry>bool</entry>
+       <entry>Optional. If true, this key should be decrypted by the KMIP server.</entry>
+      </row>
+     </tbody>
+    </tgroup>
+   </table>
+  </para>
+'>
+
+<!ENTITY mongodb.option.encryption.tlsOptions '
+         <row xmlns="http://docbook.org/ns/docbook">
+          <entry>tlsOptions</entry>
+          <entry><type>array</type></entry>
+          <entry>
+           <simpara>
+            A document containing the TLS configuration for one or more KMS providers. Supported providers include <literal>"aws"</literal>, <literal>"azure"</literal>, <literal>"gcp"</literal>, and <literal>"kmip"</literal>. All providers support the following options:
+           </simpara>
+           <programlisting role="javascript">
+<![CDATA[
+<provider>: {
+    tlsCaFile: <optional string>,
+    tlsCertificateKeyFile: <optional string>,
+    tlsCertificateKeyFilePassword: <optional string>,
+    tlsDisableOCSPEndpointCheck: <optional bool>
+}
+]]>
+           </programlisting>
+          </entry>
+         </row>
+'>
+
+<!ENTITY mongodb.option.maxCommitTimeMS '
+         <row xmlns="http://docbook.org/ns/docbook">
+          <entry>maxCommitTimeMS</entry>
+          <entry>integer</entry>
+          <entry>
+           <simpara>
+            The maximum amount of time in milliseconds to allow a single
+            <literal>commitTransaction</literal> command to run.
+           </simpara>
+           <simpara>
+            If specified, <literal>maxCommitTimeMS</literal> must be a signed
+            32-bit integer greater than or equal to zero.
+           </simpara>
+          </entry>
+         </row>
+'>
+
+<!ENTITY mongodb.option.readConcern '
+         <row xmlns="http://docbook.org/ns/docbook">
+          <entry>readConcern</entry>
+          <entry><classname>MongoDB\Driver\ReadConcern</classname></entry>
+          <entry>
+           <simpara>
+            A read concern to apply to the operation.
+           </simpara>
+           <simpara>
+            This option is available in MongoDB 3.2+ and will result in an
+            exception at execution time if specified for an older server
+            version.
+           </simpara>
+          </entry>
+         </row>
+'>
+
+<!ENTITY mongodb.option.readPreference '
+         <row xmlns="http://docbook.org/ns/docbook">
+          <entry>readPreference</entry>
+          <entry><classname>MongoDB\Driver\ReadPreference</classname></entry>
+          <entry>
+           <simpara>
+            A read preference to use for selecting a server for the operation.
+           </simpara>
+          </entry>
+         </row>
+'>
+
+<!ENTITY mongodb.option.session '
+         <row xmlns="http://docbook.org/ns/docbook">
+          <entry>session</entry>
+          <entry><classname>MongoDB\Driver\Session</classname></entry>
+          <entry>
+           <simpara>
+            A session to associate with the operation.
+           </simpara>
+          </entry>
+         </row>
+'>
+
+<!ENTITY mongodb.option.transactionReadWriteConcern '
+     <warning xmlns="http://docbook.org/ns/docbook">
+      <simpara>
+       If you are using a <literal>"session"</literal> which has a transaction
+       in progress, you cannot specify a <literal>"readConcern"</literal> or
+       <literal>"writeConcern"</literal> option. This will result in an
+       <classname>MongoDB\Driver\Exception\InvalidArgumentException</classname>
+       being thrown. Instead, you should set these two options when you create
+       the transaction with
+       <methodname>MongoDB\Driver\Session::startTransaction</methodname>.
+      </simpara>
+     </warning>
+'>
+
+<!ENTITY mongodb.option.writeConcern '
+         <row xmlns="http://docbook.org/ns/docbook">
+          <entry>writeConcern</entry>
+          <entry><classname>MongoDB\Driver\WriteConcern</classname></entry>
+          <entry>
+           <simpara>
+            A write concern to apply to the operation.
+           </simpara>
+          </entry>
+         </row>
+'>
+
+<!ENTITY mongodb.parameter.namespace '
+   <varlistentry xmlns="http://docbook.org/ns/docbook">
+    <term><parameter>namespace</parameter> (<type>string</type>)</term>
+    <listitem>
+     <simpara>
+      A fully qualified namespace (e.g. <literal>"databaseName.collectionName"</literal>).
+     </simpara>
+    </listitem>
+   </varlistentry>
+'>
+
+<!ENTITY mongodb.parameter.db '
+   <varlistentry xmlns="http://docbook.org/ns/docbook">
+    <term><parameter>db</parameter> (<type>string</type>)</term>
+    <listitem>
+     <simpara>
+      The name of the database on which to execute the command.
+     </simpara>
+    </listitem>
+   </varlistentry>
+'>
+
+<!ENTITY mongodb.parameter.bulkwrite '
+   <varlistentry xmlns="http://docbook.org/ns/docbook">
+    <term><parameter>bulk</parameter> (<classname>MongoDB\Driver\BulkWrite</classname>)</term>
+    <listitem>
+     <simpara>
+      The write(s) to execute.
+     </simpara>
+    </listitem>
+   </varlistentry>
+'>
+
+<!ENTITY mongodb.parameter.bulkwritecommand '
+   <varlistentry xmlns="http://docbook.org/ns/docbook">
+    <term><parameter>bulk</parameter> (<classname>MongoDB\Driver\BulkWriteCommand</classname>)</term>
+    <listitem>
+     <simpara>
+      The write(s) to execute.
+     </simpara>
+    </listitem>
+   </varlistentry>
+'>
+
+<!ENTITY mongodb.parameter.command '
+   <varlistentry xmlns="http://docbook.org/ns/docbook">
+    <term><parameter>command</parameter> (<classname>MongoDB\Driver\Command</classname>)</term>
+    <listitem>
+     <simpara>
+      The command to execute.
+     </simpara>
+    </listitem>
+   </varlistentry>
+'>
+
+<!ENTITY mongodb.parameter.encryptOpts '
+   <varlistentry xmlns="http://docbook.org/ns/docbook">
+    <term><parameter>options</parameter></term>
+    <listitem>
+     <para>
+      <table>
+       <title>Encryption options</title>
+       <tgroup cols="3">
+        <thead>
+         <row>
+          <entry>Option</entry>
+          <entry>Type</entry>
+          <entry>Description</entry>
+         </row>
+        </thead>
+        <tbody>
+         <row>
+          <entry>algorithm</entry>
+          <entry><type>string</type></entry>
+          <entry>
+           <simpara>
+            The encryption algorithm to be used. This option is required.
+            Specify one of the following
+            <link linkend="mongodb-driver-clientencryption.constants">ClientEncryption constants</link>:
+           </simpara>
+           <simplelist>
+            <member><constant>MongoDB\Driver\ClientEncryption::AEAD_AES_256_CBC_HMAC_SHA_512_DETERMINISTIC</constant></member>
+            <member><constant>MongoDB\Driver\ClientEncryption::AEAD_AES_256_CBC_HMAC_SHA_512_RANDOM</constant></member>
+            <member><constant>MongoDB\Driver\ClientEncryption::ALGORITHM_INDEXED</constant></member>
+            <member><constant>MongoDB\Driver\ClientEncryption::ALGORITHM_UNINDEXED</constant></member>
+            <member><constant>MongoDB\Driver\ClientEncryption::ALGORITHM_RANGE</constant></member>
+           </simplelist>
+          </entry>
+         </row>
+         <row>
+          <entry>contentionFactor</entry>
+          <entry><type>int</type></entry>
+          <entry>
+           <simpara>
+            The contention factor for evaluating queries with indexed, encrypted
+            payloads.
+           </simpara>
+           <simpara>
+            This option only applies and may only be specified when
+            <literal>algorithm</literal> is
+            <constant>MongoDB\Driver\ClientEncryption::ALGORITHM_INDEXED</constant>
+            or
+            <constant>MongoDB\Driver\ClientEncryption::ALGORITHM_RANGE</constant>.
+           </simpara>
+          </entry>
+         </row>
+         <row>
+          <entry>keyAltName</entry>
+          <entry><type>string</type></entry>
+          <entry>
+           <simpara>
+            Identifies a key vault collection document by
+            <literal>keyAltName</literal>. This option is mutually exclusive
+            with <literal>keyId</literal> and exactly one is required.
+           </simpara>
+          </entry>
+         </row>
+         <row>
+          <entry>keyId</entry>
+          <entry><classname>MongoDB\BSON\Binary</classname></entry>
+          <entry>
+           <simpara>
+            Identifies a data key by <literal>_id</literal>. The value is a UUID
+            (binary subtype 4). This option is mutually exclusive with
+            <literal>keyAltName</literal> and exactly one is required.
+           </simpara>
+          </entry>
+         </row>
+         <row>
+          <entry>queryType</entry>
+          <entry><type>string</type></entry>
+          <entry>
+           <simpara>
+            The query type for evaluating queries with indexed, encrypted
+            payloads. Specify one of the following
+            <link linkend="mongodb-driver-clientencryption.constants">ClientEncryption constants</link>:
+           </simpara>
+           <simplelist>
+            <member><constant>MongoDB\Driver\ClientEncryption::QUERY_TYPE_EQUALITY</constant></member>
+            <member><constant>MongoDB\Driver\ClientEncryption::QUERY_TYPE_RANGE</constant></member>
+           </simplelist>
+           <simpara>
+            This option only applies and may only be specified when
+            <literal>algorithm</literal> is
+            <constant>MongoDB\Driver\ClientEncryption::ALGORITHM_INDEXED</constant>
+            or <constant>MongoDB\Driver\ClientEncryption::ALGORITHM_RANGE</constant>.
+           </simpara>
+          </entry>
+         </row>
+         <row>
+          <entry>rangeOpts</entry>
+          <entry><type>array</type></entry>
+          <entry>
+           <simpara>
+            Index options for a queryable encryption field supporting "range"
+            queries. The options below must match the values set in the
+            <literal>encryptedFields</literal> of the target collection. For
+            double and decimal128 BSON field types, <literal>min</literal>,
+            <literal>max</literal>, and <literal>precision</literal> must all be
+            set, or all be unset.
+           </simpara>
+           <para>
+            <table>
+             <title>Range index options</title>
+             <tgroup cols="3">
+              <thead>
+               <row>
+                <entry>Option</entry>
+                <entry>Type</entry>
+                <entry>Description</entry>
+               </row>
+              </thead>
+              <tbody>
+               <row>
+                <entry>min</entry>
+                <entry><type>mixed</type></entry>
+                <entry>
+                 Required if <literal>precision</literal> is set. The minimum
+                 BSON value of the range.
+                </entry>
+               </row>
+               <row>
+                <entry>max</entry>
+                <entry><type>mixed</type></entry>
+                <entry>
+                 Required if <literal>precision</literal> is set. The maximum
+                 BSON value of the range.
+                </entry>
+               </row>
+               <row>
+                <entry>sparsity</entry>
+                <entry><type>int</type></entry>
+                <entry>Optional. Positive 64-bit integer.</entry>
+               </row>
+               <row>
+                <entry>precision</entry>
+                <entry><type>int</type></entry>
+                <entry>
+                 Optional. Positive 32-bit integer specifying precision to use
+                 for explicit encryption. May only be set for double or
+                 decimal128 BSON field types.
+                </entry>
+               </row>
+               <row>
+                <entry>trimFactor</entry>
+                <entry><type>int</type></entry>
+                <entry>Optional. Positive 32-bit integer.</entry>
+               </row>
+              </tbody>
+             </tgroup>
+            </table>
+           </para>
+          </entry>
+         </row>
+        </tbody>
+       </tgroup>
+      </table>
+     </para>
+    </listitem>
+   </varlistentry>
+'>
+
+<!ENTITY mongodb.parameter.query '
+   <varlistentry xmlns="http://docbook.org/ns/docbook">
+    <term><parameter>query</parameter> (<classname>MongoDB\Driver\Query</classname>)</term>
+    <listitem>
+     <simpara>
+      The query to execute.
+     </simpara>
+    </listitem>
+   </varlistentry>
+'>
+
+<!ENTITY mongodb.parameter.typeMap '
+   <varlistentry xmlns="http://docbook.org/ns/docbook">
+    <term><parameter>typeMap</parameter> (<type>array</type>)</term>
+    <listitem>
+     <simpara>
+      <link linkend="mongodb.persistence.typemaps">Type map configuration</link>.
+     </simpara>
+    </listitem>
+   </varlistentry>
+'>
+
+<!ENTITY mongodb.parameter.filter '
+   <varlistentry xmlns="http://docbook.org/ns/docbook">
+    <term><parameter>filter</parameter> (<type class="union"><type>array</type><type>object</type></type>)</term>
+    <listitem>
+     <simpara>
+      The <link xlink:href="&url.mongodb.docs;tutorial/query-documents/" xmlns:xlink="http://www.w3.org/1999/xlink">query predicate</link>.
+      An empty predicate will match all documents in the collection.
+     </simpara>
+     <note>
+      <simpara>
+       When evaluating query criteria, MongoDB compares types and values according to its own <link xlink:href="&url.mongodb.docs;reference/bson-type-comparison-order/" xmlns:xlink="http://www.w3.org/1999/xlink">comparison rules for BSON types</link>, which differs from PHP&apos;s <link linkend="types.comparisons">comparison</link> and <link linkend="language.types.type-juggling">type juggling</link> rules. When matching a special BSON type the query criteria should use the respective <link linkend="mongodb.bson">BSON class</link> (e.g. use <classname>MongoDB\BSON\ObjectId</classname> to match an <link xlink:href="&url.mongodb.docs.objectid;" xmlns:xlink="http://www.w3.org/1999/xlink">ObjectId</link>).
+      </simpara>
+     </note>
+    </listitem>
+   </varlistentry>
+'>
+
+<!ENTITY mongodb.returns.cursor '<simpara xmlns="http://docbook.org/ns/docbook">Returns <classname>MongoDB\Driver\Cursor</classname> on success.</simpara>'>
+
+<!ENTITY mongodb.returns.writeresult '<simpara xmlns="http://docbook.org/ns/docbook">Returns <classname>MongoDB\Driver\WriteResult</classname> on success.</simpara>'>
+
+<!ENTITY mongodb.returns.bulkwritecommandresult '<simpara xmlns="http://docbook.org/ns/docbook">Returns <classname>MongoDB\Driver\BulkWriteCommandResult</classname> on success.</simpara>'>
+
+<!ENTITY mongodb.throws.std '&mongodb.throws.argumentparsing;&mongodb.throws.connection;&mongodb.throws.authentication;'>
+
+<!ENTITY mongodb.throws.session-readwriteconcern '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\InvalidArgumentException</classname> if the <literal>"session"</literal> option is used with an associated transaction in combination with a <literal>"readConcern"</literal> or <literal>"writeConcern"</literal> option.</member>'>
+
+<!ENTITY mongodb.throws.session-unacknowledged '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\InvalidArgumentException</classname> if the <literal>"session"</literal> option is used in combination with an unacknowledged write concern.</member>'>
+
+<!ENTITY mongodb.throws.bulkwritecommandexception '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\BulkWriteCommandException</classname> on any write failure (e.g. command failure, write or write concern error)</member>'>
+
+<!ENTITY mongodb.throws.bulkwriteexception '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\BulkWriteException</classname> on any write failure (e.g. write error, failure to apply a write concern)</member>'>
+
+<!ENTITY mongodb.throws.argumentparsing '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\InvalidArgumentException</classname> on argument parsing errors.</member>'>
+
+<!ENTITY mongodb.throws.authentication '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\AuthenticationException</classname> if authentication is needed and fails.</member>'>
+
+<!ENTITY mongodb.throws.connection '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\ConnectionException</classname> if connection to the server fails (for reasons other than authentication).</member>'>
+
+<!ENTITY mongodb.throws.bson.unexpected '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\UnexpectedValueException</classname> if the input did not contain exactly one BSON document. Possible reasons include, but are not limited to, invalid BSON, extra data (after reading one BSON document), or an unexpected <link xlink:href="&url.mongodb.libbson;" xmlns:xlink="http://www.w3.org/1999/xlink">libbson</link> error.</member>'>
+
+<!ENTITY mongodb.throws.unacknowledged '<member xmlns="http://docbook.org/ns/docbook">Throws <classname>MongoDB\Driver\Exception\LogicException</classname> if the write was not acknowledged.</member>'>
+
+<!ENTITY mongodb.note.decimal128 '
+   <note xmlns="http://docbook.org/ns/docbook">
+    <simpara>
+     <classname>MongoDB\BSON\Decimal128</classname> is only compatible with
+     MongoDB 3.4+. Attempting to use the BSON type with an earlier version of
+     MongoDB will result in an error.
+    </simpara>
+   </note>
+'>
+
+<!ENTITY mongodb.note.extended-json '
+  <note xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <simpara>
+    The output is consistent with the <function>MongoDB\BSON\toJSON</function>
+    function, which uses the driver-specific legacy extended JSON format. This
+    does not necessarily match the
+    <link xlink:href="&url.mongodb.specs.extendedjson;#relaxed-extended-json-example">relaxed</link>
+    or <link xlink:href="&url.mongodb.specs.extendedjson;#canonical-extended-json-example">canonical</link>
+    extended JSON representations used by
+    <function>MongoDB\BSON\toRelaxedExtendedJSON</function> and
+    <function>MongoDB\BSON\toCanonicalExtendedJSON</function>, respectively.
+   </simpara>
+  </note>
+'>
+
+<!ENTITY mongodb.note.forking '
+   <note xmlns="http://docbook.org/ns/docbook">
+    <simpara>
+     On Unix platforms, the extension is sensitive to scripts that use the
+     fork() system call without also calling exec(). Users are advised not to
+     re-use <classname>MongoDB\Driver\Manager</classname> instances in a forked
+     child process.
+    </simpara>
+   </note>
+'>
+
+<!ENTITY mongodb.note.uint32 '
+  <note xmlns="http://docbook.org/ns/docbook">
+   <simpara>
+    Because PHP&apos;s integer type is signed, some values returned by this
+    method may appear as negative integers on 32-bit platforms. The
+    <literal>"&#37;u"</literal> formatter of <function>sprintf</function> may be
+    used to obtain a string representation of the unsigned decimal value.
+   </simpara>
+  </note>
+'>
+
+<!ENTITY mongodb.note.server.readpreference '
+  <note xmlns="http://docbook.org/ns/docbook">
+   <simpara>
+    The <literal>"readPreference"</literal> option does not control the server
+    to which the driver issues the operation; it will always be executed on
+    this server object. Instead, it may be used when issuing the operation to a
+    secondary (from a replica set connection, not standalone) or mongos node to
+    ensure that the driver sets the wire protocol accordingly or adds the read
+    preference to the operation, respectively.
+   </simpara>
+  </note>
+'>
+
+<!ENTITY mongodb.note.server.write '
+  <note xmlns="http://docbook.org/ns/docbook">
+   <simpara>
+    It is the caller&apos;s responsibility to ensure that the server is capable
+    of executing the write operation. For example, executing a write operation
+    on a secondary (excluding its "local" database) will fail.
+   </simpara>
+  </note>
+'>
+
+<!ENTITY mongodb.warning.duplicate-keys '
+   <warning xmlns="http://docbook.org/ns/docbook">
+    <simpara>
+     BSON documents can technically contain duplicate keys because documents are
+     stored as a list of key-value pairs; however, applications should refrain
+     from generating documents with duplicate keys as server and driver behavior
+     may be undefined. Since PHP objects and arrays cannot have duplicate keys,
+     data could also be lost when decoding a BSON document with duplicate keys.
+    </simpara>
+   </warning>
+'>
+
+<!ENTITY radius.request.required '<note xmlns="http://docbook.org/ns/docbook"><simpara>A request must be created via <function>radius_create_request</function> before this function can be called.</simpara></note>'>
+
+<!ENTITY radius.parameter.attribute-type '<varlistentry xmlns="http://docbook.org/ns/docbook"><term><parameter>type</parameter></term><listitem><simpara>The attribute type.</simpara></listitem></varlistentry>'>
+
+<!ENTITY radius.parameter.handle '<varlistentry xmlns="http://docbook.org/ns/docbook"><term><parameter>radius_handle</parameter></term><listitem><simpara>The RADIUS resource.</simpara></listitem></varlistentry>'>
+
+<!ENTITY radius.parameter.options '<varlistentry xmlns="http://docbook.org/ns/docbook"><term><parameter>options</parameter></term><listitem><simpara>A bitmask of the attribute options. The available options include <link linkend="constant.radius-option-tagged"><constant>RADIUS_OPTION_TAGGED</constant></link> and <link linkend="constant.radius-option-salt"><constant>RADIUS_OPTION_SALT</constant></link>.</simpara></listitem></varlistentry>'>
+
+<!ENTITY radius.parameter.tag '<varlistentry xmlns="http://docbook.org/ns/docbook"><term><parameter>tag</parameter></term><listitem><simpara>The attribute tag. This parameter is ignored unless the <link linkend="constant.radius-option-tagged"><constant>RADIUS_OPTION_TAGGED</constant></link> option is set.</simpara></listitem></varlistentry>'>
+
+<!ENTITY radius.parameter.vendor '<varlistentry xmlns="http://docbook.org/ns/docbook"><term><parameter>vendor</parameter></term><listitem><simpara>The vendor ID.</simpara></listitem></varlistentry>'>
+
+<!ENTITY uopz.warn.removed.function-5-0-0 '<warning
+xmlns="http://docbook.org/ns/docbook"><simpara>This function has been
+<emphasis>REMOVED</emphasis> in PECL uopz 5.0.0.</simpara></warning>'>
