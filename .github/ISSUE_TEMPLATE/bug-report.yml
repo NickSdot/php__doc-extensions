@@ -8,7 +8,7 @@ body:
     attributes:
       label: "Affected page"
       description: "Provide the URL or file path of the affected documentation page."
-      placeholder: "e.g., https://www.php.net/manual/en/function.strlen.php"
+      placeholder: "e.g., https://www.php.net/manual/extensions/function.strlen.php"
     validations:
       required: true
 

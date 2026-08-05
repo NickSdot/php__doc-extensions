@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision$ -->
+
+
+<!-- Base entities used for building doc-extensions, for the time being -->
+<!ENTITY LANG                 "en">
+<!ENTITY ThirdPartyManual     "PHP Third-Party Extension Manual">
+<!ENTITY ThirdPartyExtensions "Third-Party Extensions">
 
 <!-- Part titles used mostly in manual.xml itself -->
 <!ENTITY PHPManual         "PHP Manual">

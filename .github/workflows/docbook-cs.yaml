@@ -5,10 +5,10 @@ name: "DocBook Lint"
 on:
   push:
     branches:
-      - "master"
+      - "main"
   pull_request:
     branches:
-      - "master"
+      - "main"
 
 permissions:
   contents: "read"
@@ -36,7 +36,7 @@ jobs:
     strategy:
       matrix:
         language:
-          - "en"
+          - "extensions"
 
     steps:
       - name: "Checkout php/doc-${{ matrix.language }}"
@@ -83,7 +83,7 @@ jobs:
             --disable-libxml-check \
             --enable-xml-details \
             --redirect-stderr-to-stdout \
-            --with-lang=${{ matrix.language }}
+            --with-base-lang=${{ matrix.language }}
 
       - name: "Install docbook-cs"
         working-directory: "docbook-cs"

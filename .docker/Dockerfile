@@ -1,4 +1,4 @@
-FROM php:8.2-cli
+FROM php:8.4-cli
 ARG UID=1000
 ARG GID=1000
 
@@ -19,10 +19,10 @@ RUN echo 'memory_limit = 512M' >> /usr/local/etc/php/conf.d/local.ini
 ENV FORMAT=xhtml
 
 CMD ["sh", "-c", "\
-php doc-base/configure.php && \
+php doc-base/configure.php --with-base-lang=extensions && \
 exec php phd/render.php \
   --docbook doc-base/.manual.xml \
-  --output=/var/www/en/output \
+  --output=/var/www/extensions/output \
   --package PHP \
-  --format ${FORMAT}\
+  --format ${FORMAT} \
 "]
