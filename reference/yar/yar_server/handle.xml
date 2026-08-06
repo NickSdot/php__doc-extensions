@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision$ --> 
+<!-- $Revision$ -->
 
 <refentry xml:id="yar-server.handle" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -16,11 +16,11 @@
   <para>
    Start a RPC HTTP server, and ready for accpet RPC requests.
    <note>
-    <para>
+    <simpara>
      Usual RPC calls will be issued as HTTP POST requests. If a HTTP GET
      request is issued to the uri, the service information (commented section
      above) will be printed on the page
-    </para>
+    </simpara>
    </note>
   </para>
  </refsect1>
@@ -32,9 +32,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    boolean
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -47,7 +47,7 @@
 class API {
     /**
      * the doc info will be generated automatically into service info page.
-     * @params 
+     * @params
      * @return
      */
     public function some_method($parameter, $option = "foo") {

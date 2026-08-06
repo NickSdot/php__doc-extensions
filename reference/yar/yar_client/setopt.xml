@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision$ --> 
+<!-- $Revision$ -->
 
 <refentry xml:id="yar-client.setopt" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -14,9 +14,9 @@
    <methodparam><type>int</type><parameter>name</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,7 +25,7 @@
    <varlistentry>
     <term><parameter>name</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       it can be:
         <constant>YAR_OPT_PACKAGER</constant>,
         <constant>YAR_OPT_PERSISTENT</constant> (Need server support),
@@ -33,15 +33,15 @@
         <constant>YAR_OPT_CONNECT_TIMEOUT</constant>,
         <constant>YAR_OPT_HEADER</constant> (as of 2.0.4),
         <constant>YAR_OPT_PROXY</constant> (as of 2.2.0)
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns <varname>$this</varname> on success&return.falseforfailure;.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

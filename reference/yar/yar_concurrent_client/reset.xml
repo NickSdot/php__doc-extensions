@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision$ --> 
+<!-- $Revision$ -->
 
 <refentry xml:id="yar-concurrent-client.reset" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -13,9 +13,9 @@
    <modifier>public</modifier> <modifier>static</modifier> <type>bool</type><methodname>Yar_Concurrent_Client::reset</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Clean all registered calls
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,8 +25,8 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-  </para>
+  <simpara>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

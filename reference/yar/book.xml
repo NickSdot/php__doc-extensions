@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision$ --> 
+<!-- $Revision$ -->
 
 <book xml:id="book.yar" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="pecl" ?>
@@ -8,11 +8,11 @@
 
  <preface xml:id="intro.yar">
   &reftitle.intro;
-  <para>
+  <simpara>
     Yar is a RPC framework which aims to provide a simple and easy way to do
     communication between PHP applications
     It has the ability to concurrently call multiple remote services.
-  </para>
+  </simpara>
  </preface>
 
  &reference.yar.setup;
