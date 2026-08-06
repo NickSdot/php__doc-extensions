@@ -15,7 +15,7 @@
    <methodparam><type>float</type><parameter>beta</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>channel</parameter><initializer>Imagick::CHANNEL_DEFAULT</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Adjusts the contrast of an image with a non-linear sigmoidal contrast
    algorithm. Increase the contrast of the image using a sigmoidal transfer
    function without saturating highlights or shadows. Contrast indicates
@@ -23,11 +23,11 @@
    pushing it); mid-point indicates where midtones fall in the resultant
    image (0 is white; 50 is middle-gray; 100 is black). Set sharpen to
    &true; to increase the image contrast otherwise the contrast is reduced.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    See also <link xlink:href="&url.imagemagick.usage.color_mods.sigmoidal;">ImageMagick
    v6 Examples - Image Transformations — Sigmoidal Non-linearity Contrast</link>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -37,17 +37,17 @@
     <varlistentry>
      <term><parameter>sharpen</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        If true increase the contrast, if false decrease the contrast.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>alpha</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        The amount of contrast to apply. 1 is very little, 5 is a significant amount, 20 is extreme.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -61,9 +61,9 @@
     <varlistentry>
      <term><parameter>channel</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Which color channels the contrast will be applied to.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -72,18 +72,18 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &imagick.return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    &imagick.imagick.throws;
-  </para>
+  </simpara>
  </refsect1>
- 
+
  <refsect1 role="examples">
   &reftitle.examples;
   <para>
@@ -103,7 +103,7 @@ function generateBlendImage($width, $height, $contrast = 10, $midpoint = 0.5) {
     $quanta = $imagick->getQuantumRange();
     $imagick->sigmoidalContrastImage(true, $contrast, $midpoint * $quanta["quantumRangeLong"]);
 
-    return $imagick; 
+    return $imagick;
 }
 
 ?>

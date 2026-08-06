@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="imagick.scaleimage">
+<refentry xml:id="imagick.scaleimage" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>Imagick::scaleImage</refname>
   <refpurpose>Scales the size of an image</refpurpose>
@@ -15,10 +15,10 @@
    <methodparam choice="opt"><type>bool</type><parameter>bestfit</parameter><initializer>&false;</initializer></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>legacy</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Scales the size of an image to the given dimensions. The other parameter
    will be calculated if 0 is passed as either param.
-  </para>
+  </simpara>
   &imagick.bestfit.note;
  </refsect1>
 
@@ -29,22 +29,22 @@
     <varlistentry>
      <term><parameter>columns</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>rows</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>bestfit</parameter></term>
      <listitem>
-      <para>
-      </para>
+      <simpara>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -53,16 +53,16 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &imagick.return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
+  <simpara>
    &imagick.imagick.throws;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="changelog">
@@ -81,7 +81,7 @@
        <entry>PECL imagick 2.1.0</entry>
        <entry>
        Added optional fit parameter. This method now supports proportional scaling.
-       Pass zero as either parameter for proportional scaling.  
+       Pass zero as either parameter for proportional scaling.
        </entry>
       </row>
      </tbody>
