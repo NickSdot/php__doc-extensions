@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>Yaf_Response_Abstract</type><methodname>Yaf_Controller_Abstract::getResponse</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
     retrieve current response object
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
     <classname>Yaf_Response_Abstract</classname> instance
-  </para>
+  </simpara>
  </refsect1>
 
 

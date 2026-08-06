@@ -11,24 +11,24 @@
 <!-- {{{ Yaf_Application intro -->
   <section xml:id="yaf-application.intro">
    &reftitle.intro;
-   <para>
-     <classname>Yaf_Application</classname> provides a bootstrapping facility 
-     for applications which provides reusable resources, common- and 
-     module-based bootstrap classes and dependency checking. 
-   </para>
+   <simpara>
+     <classname>Yaf_Application</classname> provides a bootstrapping facility
+     for applications which provides reusable resources, common- and
+     module-based bootstrap classes and dependency checking.
+   </simpara>
    <para>
     <note>
-     <para>
+     <simpara>
        <classname>Yaf_Application</classname> implements the singleton
        pattern, and <classname>Yaf_Application</classname> can not be
-       serialized or unserialized which will cause problem when you try 
+       serialized or unserialized which will cause problem when you try
        to use PHPUnit to write some test case for Yaf.
-      </para>
-      <para>
-       You may use @backupGlobals annotation of PHPUnit to control the 
-       backup and restore operations for global variables. thus can solve 
+      </simpara>
+      <simpara>
+       You may use @backupGlobals annotation of PHPUnit to control the
+       backup and restore operations for global variables. thus can solve
        this problem.
-     </para>
+     </simpara>
     </note>
    </para>
   </section>
@@ -76,7 +76,7 @@
      <varname linkend="yaf-application.props.environ">_environ</varname>
     </fieldsynopsis>
 
-    
+
     <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-application')/db:refentry/db:refsect1[@role='description']/descendant::db:constructorsynopsis[not(@role='procedural')])" />
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-application')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[not(@role='procedural')])" />
@@ -86,7 +86,7 @@
 
   </section>
 
-  
+
 <!-- {{{ Yaf_Application properties -->
   <section xml:id="yaf-application.props">
    &reftitle.properties;
@@ -94,37 +94,37 @@
     <varlistentry xml:id="yaf-application.props.config">
      <term><varname>config</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-application.props.dispatcher">
      <term><varname>dispatcher</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-application.props.app">
      <term><varname>_app</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-application.props.modules">
      <term><varname>_modules</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-application.props.running">
      <term><varname>_running</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-application.props.environ">
      <term><varname>_environ</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
    </variablelist>

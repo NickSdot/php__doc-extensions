@@ -13,10 +13,10 @@
    <modifier>abstract</modifier> <modifier>public</modifier> <type>void</type><methodname>Yaf_View_Interface::setScriptPath</methodname>
    <methodparam><type>string</type><parameter>template_dir</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Set the templates base directory, this is usually called by
     <classname>Yaf_Dispatcher</classname>
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,11 +28,11 @@
    <varlistentry>
     <term><parameter>template_dir</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A absolute path to the template directory, by default,
       <classname>Yaf_Dispatcher</classname> use
       <link linkend="configuration.yaf.directory">application.directory</link> . "/views" as this parameter.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
 

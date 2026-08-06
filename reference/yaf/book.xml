@@ -8,18 +8,18 @@
 
  <preface xml:id="intro.yaf">
   &reftitle.intro;
-  <para>
-   The <literal>Yet Another Framework</literal> (<acronym>Yaf</acronym>) extension 
+  <simpara>
+   The <literal>Yet Another Framework</literal> (<acronym>Yaf</acronym>) extension
    is a PHP framework that is used to develop web applications.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    A simple Yaf benchmark can be found at <link
     xlink:href="&url.yaf.benchmarks;">Yaf Performance</link>.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    For a quick start guide, please refer to the <link
     linkend="yaf.tutorials">Tutorials</link> section.
-  </para>
+  </simpara>
  </preface>
 
  &reference.yaf.setup;
@@ -55,13 +55,13 @@
  &reference.yaf.yaf-exception;
  &reference.yaf.yaf-exception-typeerror;
  &reference.yaf.yaf-exception-startuperror;
- &reference.yaf.yaf-exception-dispatchfailed;     
+ &reference.yaf.yaf-exception-dispatchfailed;
  &reference.yaf.yaf-exception-routerfailed;
- &reference.yaf.yaf-exception-loadfailed;       
+ &reference.yaf.yaf-exception-loadfailed;
  &reference.yaf.yaf-exception-loadfailed-module;
  &reference.yaf.yaf-exception-loadfailed-controller;
- &reference.yaf.yaf-exception-loadfailed-action;  
- &reference.yaf.yaf-exception-loadfailed-view;  
+ &reference.yaf.yaf-exception-loadfailed-action;
+ &reference.yaf.yaf-exception-loadfailed-view;
 
 </book>
 

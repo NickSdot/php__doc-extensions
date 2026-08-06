@@ -16,10 +16,10 @@
   <para>
     disable view engine, used in some app that user will output by theirself
     <note>
-     <para>
+     <simpara>
      you can simply return &false; in a action to prevent the auto-rendering of
      that action
-    </para>
+    </simpara>
     </note>
   </para>
  </refsect1>
@@ -31,9 +31,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
 

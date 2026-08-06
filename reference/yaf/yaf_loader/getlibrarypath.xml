@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>Yaf_Loader</type><methodname>Yaf_Loader::getLibraryPath</methodname>
    <methodparam choice="opt"><type>bool</type><parameter>is_global</parameter><initializer>&false;</initializer></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,9 +28,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
 

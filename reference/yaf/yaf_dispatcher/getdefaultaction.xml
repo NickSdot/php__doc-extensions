@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>string</type><methodname>Yaf_Dispatcher::getDefaultAction</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    get the default action name
-  </para>
+  </simpara>
 
 
 
@@ -28,9 +28,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &string;, default action name, default is "index"
-  </para>
+  </simpara>
  </refsect1>
 
 

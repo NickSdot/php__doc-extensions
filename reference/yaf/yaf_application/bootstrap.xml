@@ -13,11 +13,11 @@
    <modifier>public</modifier> <type>void</type><methodname>Yaf_Application::bootstrap</methodname>
    <methodparam choice="opt"><type>Yaf_Bootstrap_Abstract</type><parameter>bootstrap</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Run a Bootstrap, all the methods defined in the Bootstrap and named with
     prefix "_init" will be called according to their declaration order, if the parameter bootstrap is not supplied, Yaf will look
     for a Bootstrap under application.directory.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -27,9 +27,9 @@
    <varlistentry>
     <term><parameter>bootstrap</parameter></term>
     <listitem>
-     <para>
-      A <classname>Yaf_Bootstrap_Abstract</classname> instance      
-     </para>
+     <simpara>
+      A <classname>Yaf_Bootstrap_Abstract</classname> instance
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <classname>Yaf_Application</classname> instance
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -51,7 +51,7 @@
 <?php
 /**
  * This file should be under the APPLICATION_PATH . "/application/"(which was defined in the config passed to Yaf_Application).
- * and named Bootstrap.php,  so the Yaf_Application can find it 
+ * and named Bootstrap.php,  so the Yaf_Application can find it
  */
 class Bootstrap extends Yaf_Bootstrap_Abstract {
     function _initConfig(Yaf_Dispatcher $dispatcher) {

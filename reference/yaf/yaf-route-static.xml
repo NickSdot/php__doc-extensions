@@ -11,20 +11,20 @@
 <!-- {{{ Yaf_Route_Static intro -->
   <section xml:id="yaf-route-static.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
      Defaultly, <classname>Yaf_Router</classname> only have a
      <classname>Yaf_Route_Static</classname> as its default route.
-   </para>
-   <para>
+   </simpara>
+   <simpara>
      And <classname>Yaf_Route_Static</classname> is designed to handle the
-     80% requirement. 
-   </para>
-   <para>
-     please *NOTE* that it is unnecessary to instance a <classname>Yaf_Route_Static</classname>, also 
+     80% requirement.
+   </simpara>
+   <simpara>
+     please *NOTE* that it is unnecessary to instance a <classname>Yaf_Route_Static</classname>, also
      unnecessary to add it into <classname>Yaf_Router</classname>'s routes stack,
      since there is always be one in <classname>Yaf_Router</classname>'s
      routes stack, and always be called at the last time.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -40,13 +40,13 @@
      <ooclass>
       <classname>Yaf_Route_Static</classname>
      </ooclass>
-     
+
      <oointerface>
       <interfacename>Yaf_Router</interfacename>
      </oointerface>
     </classsynopsisinfo>
 <!-- }}} -->
-    
+
     <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-route-static')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[1])" />
    </classsynopsis>

@@ -13,10 +13,10 @@
    <modifier>public</modifier> <type>Yaf_Application</type><methodname>Yaf_Dispatcher::getApplication</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieve the <classname>Yaf_Application</classname> instance. same as
    <methodname>Yaf_Application::app</methodname>.
-  </para>
+  </simpara>
 
 
 
@@ -29,9 +29,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

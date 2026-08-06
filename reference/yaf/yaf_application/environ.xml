@@ -13,10 +13,10 @@
    <modifier>public</modifier> <type>void</type><methodname>Yaf_Application::environ</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrive environ which was defined in yaf.environ which has a default value
    "product".
-  </para>
+  </simpara>
 
 
 
@@ -29,9 +29,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   
-  </para>
+  <simpara>
+
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

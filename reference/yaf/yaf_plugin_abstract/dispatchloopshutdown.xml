@@ -14,11 +14,11 @@
    <methodparam><type>Yaf_Request_Abstract</type><parameter>request</parameter></methodparam>
    <methodparam><type>Yaf_Response_Abstract</type><parameter>response</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This is the latest hook in Yaf plugin hook system, if a custom plugin
    implement this method, then it will be called after the dispatch loop
    finished.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -30,17 +30,17 @@
    <varlistentry>
     <term><parameter>request</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>response</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

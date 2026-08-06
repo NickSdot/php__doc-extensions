@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>content</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Set content to response
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
    <varlistentry>
     <term><parameter>body</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       content string
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
@@ -37,9 +37,9 @@
       the content key, you can set a content with a key, if you don't
       specific, then Yaf_Response_Abstract::DEFAULT_BODY will be used
       <note>
-       <para>
+       <simpara>
        this parameter is introduced as of 2.2.0
-      </para>
+      </simpara>
       </note>
      </para>
     </listitem>
@@ -49,9 +49,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>Yaf_Request_Abstract::clearParams</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    Remove all params set by router, or <methodname>Yaf_Request_Abstract::setParam</methodname>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &boolean;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

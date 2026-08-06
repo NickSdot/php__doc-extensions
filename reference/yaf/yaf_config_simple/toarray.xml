@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>array</type><methodname>Yaf_Config_Simple::toArray</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
     Returns a PHP array from the <classname>Yaf_Config_Simple</classname>
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
 

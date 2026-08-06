@@ -13,9 +13,9 @@
    <modifier>public</modifier><type linkend="class.yaf-controller-abstract">Yaf_Controller_Abstract</type><methodname>Yaf_Action_Abstract::getController</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    retrieve current controller object.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    <classname>Yaf_Controller_Abstract</classname> instance
-  </para>
+  </simpara>
  </refsect1>
 
 

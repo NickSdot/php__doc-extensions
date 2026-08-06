@@ -13,11 +13,11 @@
    <modifier>public</modifier> <type>Yaf_Dispatcher</type><methodname>Yaf_Dispatcher::registerPlugin</methodname>
    <methodparam><type>Yaf_Plugin_Abstract</type><parameter>plugin</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Register a plugin(see <classname>Yaf_Plugin_Abstract</classname>).
    Generally, we register plugins in Bootstrap(see
    <classname>Yaf_Bootstrap_Abstract</classname>).
-  </para>
+  </simpara>
 
 
 
@@ -29,9 +29,9 @@
    <varlistentry>
     <term><parameter>plugin</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -39,9 +39,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -54,10 +54,10 @@
 class Bootstrap extends Yaf_Bootstrap_Abstract {
   public function _initPlugin(Yaf_Dispatcher $dispatcher) {
     /**
-    * Yaf assumes plugin scripts under [application.directory] .  "/plugins" 
+    * Yaf assumes plugin scripts under [application.directory] .  "/plugins"
     * for this case, it will be:
     * [application.directory] . "/plugins/" . "User" . [application.ext]
-    */ 
+    */
     $user = new UserPlugin();
     $dispatcher->registerPlugin($user);
   }

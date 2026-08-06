@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>tpl</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>tpl_vars</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Render a template and return the result.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,17 +28,17 @@
    <varlistentry>
     <term><parameter>tpl</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>tpl_vars</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
 

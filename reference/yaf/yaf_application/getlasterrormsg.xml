@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>string</type><methodname>Yaf_Application::getLastErrorMsg</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
 
 
@@ -28,9 +28,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -44,7 +44,7 @@ function error_handler($errno, $errstr, $errfile, $errline) {
    var_dump(Yaf_Application::app()->getLastErrorMsg());
 }
 
-$config = array(                   
+$config = array(
  "application" => array(
    "directory" => "/tmp/notexists",
      "dispatcher" => array(

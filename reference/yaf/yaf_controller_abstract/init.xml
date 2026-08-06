@@ -13,13 +13,13 @@
    <modifier>public</modifier> <type>void</type><methodname>Yaf_Controller_Abstract::init</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    <methodname>Yaf_Controller_Abstract::__construct</methodname> is final,
    which means users can not override it.
    but users can define
    <methodname>Yaf_Controller_Abstract::init</methodname>, which will be
    called after controller object is instantiated.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

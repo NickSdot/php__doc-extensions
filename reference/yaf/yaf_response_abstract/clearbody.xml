@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>Yaf_Response_Abstract::clearBody</methodname>
    <methodparam choice="opt"><type>string</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Clear existsed content
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -28,9 +28,9 @@
       the content key, if you don't specific, then all contents will be
       cleared.
       <note>
-       <para>
+       <simpara>
        this parameter is introduced as of 2.2.0
-      </para>
+      </simpara>
       </note>
      </para>
     </listitem>
@@ -40,9 +40,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

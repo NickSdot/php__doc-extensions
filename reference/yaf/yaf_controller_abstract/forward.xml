@@ -30,10 +30,10 @@
   <para>
    forward current execution process to other action.
    <note>
-    <para>
+    <simpara>
       this method doesn't switch to the destination action immediately, it
       will take place after current flow finish.
-    </para>
+    </simpara>
    </note>
   </para>
  </refsect1>
@@ -44,34 +44,34 @@
    <varlistentry>
     <term><parameter>module</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        destination module name, if NULL was given, then default module name
        is assumed
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>controller</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        destination controller name
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>action</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        destination action name
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>paramters</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       calling arguments
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -79,9 +79,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    &return.success;
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -93,7 +93,7 @@
 <?php
 class IndexController extends Yaf_Controller_Abstract
 {
-    public function indexAction(){   
+    public function indexAction(){
          $logined = $_SESSION["login"];
          if (!$logined) {
              $this->forward("login", array("from" => "Index")); // forward to login action

@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>Yaf_Request_Http::getRaw</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
     Retrieve Raw request body
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return string on success, FALSE on failure.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam choice="opt"><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    assign variable to view engine
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,20 +25,20 @@
    <varlistentry>
     <term><parameter>name</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        A string or an array.
-     </para>
-     <para>
-       if is string, then the next argument $value is required. 
-     </para>
+     </simpara>
+     <simpara>
+       if is string, then the next argument $value is required.
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        mixed value
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -75,9 +75,9 @@ class IndexController extends Yaf_Controller_Abstract {
 <html>
  <head>
   <title><?php echo $foo; ?></title>
- </head>  
+ </head>
 <body>
-  <?php 
+  <?php
     foreach ($this->_tpl_vars as $name => $value) {
          echo $$name; // or echo $this->_tpl_vars[$name];
     }
@@ -95,8 +95,8 @@ class IndexController extends Yaf_Controller_Abstract {
    <member><methodname>Yaf_View_Simple::assignRef</methodname></member>
    <member><methodname>Yaf_View_Interface::clear</methodname></member>
    <member><methodname>Yaf_View_Simple::__set</methodname></member>
-  </simplelist>                       
- </refsect1>  
+  </simplelist>
+ </refsect1>
 
 </refentry>
 

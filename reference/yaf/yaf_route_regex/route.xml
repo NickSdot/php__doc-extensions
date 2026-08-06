@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>Yaf_Route_Regex::route</methodname>
    <methodparam><type>Yaf_Request_Abstract</type><parameter>request</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Route a incoming request.
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -27,9 +27,9 @@
    <varlistentry>
     <term><parameter>request</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -37,11 +37,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   If the pattern given by the first parameter of 
+  <simpara>
+   If the pattern given by the first parameter of
    <methodname>Yaf_Route_Regex::_construct</methodname> matche the request
    uri, return &true;, otherwise return &false;.
-  </para>
+  </simpara>
  </refsect1>
 
 

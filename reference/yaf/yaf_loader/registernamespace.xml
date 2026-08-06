@@ -14,17 +14,17 @@
    <methodparam><type class="union"><type>string</type><type>array</type></type><parameter>namespaces</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>path</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Register a namespace with searching path, <classname>Yaf_Loader</classname>
-   searchs classes under this namespace in path, the one is also could be 
+   searchs classes under this namespace in path, the one is also could be
    configureded via <link linkend="configuration.yaf.library.namespace">
    application.library.directory.namespace</link>(in application.ini);
-  </para>
+  </simpara>
   <para>
    <note>
-    <para>
+    <simpara>
       Yaf still think underline as folder separator.
-    </para>
+    </simpara>
    </note>
   </para>
  </refsect1>
@@ -35,17 +35,17 @@
    <varlistentry>
     <term><parameter>namespace</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       a string of namespace, or an array of namespaces with paths.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>path</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       a string of path, it is better to use abosolute path here for performance
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -53,9 +53,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    bool
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

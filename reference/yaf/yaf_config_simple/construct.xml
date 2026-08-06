@@ -14,9 +14,9 @@
    <methodparam><type>array</type><parameter>configs</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>readonly</parameter><initializer>false</initializer></methodparam>
   </constructorsynopsis>
-  <para>
-    
-  </para>
+  <simpara>
+
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,17 +28,17 @@
    <varlistentry>
     <term><parameter>configs</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>readonly</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -46,9 +46,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
 

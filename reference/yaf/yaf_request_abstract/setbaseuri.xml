@@ -21,9 +21,9 @@
    That is, if comes a request with request URI a/b/c, then if you set base
    URI to "a/b", only "/c" will be used in routing phase.
    <note>
-    <para>
+    <simpara>
      generally, you don't need to set this, Yaf will determine it automatically.
-    </para>
+    </simpara>
    </note>
   </para>
 
@@ -35,9 +35,9 @@
    <varlistentry>
     <term><parameter>uir</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        base URI
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -45,9 +45,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    bool
-  </para>
+  </simpara>
  </refsect1>
 
 

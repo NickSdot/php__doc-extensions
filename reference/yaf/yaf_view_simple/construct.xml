@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>template_dir</parameter></methodparam>
    <methodparam choice="opt"><type>array</type><parameter>options</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,23 +25,23 @@
    <varlistentry>
     <term><parameter>template_dir</parameter></term>
     <listitem>
-     <para>
-      The base directory of the templates,  by default, 
+     <simpara>
+      The base directory of the templates,  by default,
       it is APPLICATOIN . "/views" for Yaf.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>options</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       <![CDATA[
       Options for the engine, as of Yaf 2.1.13, you can use short tag
-      "<?=$var?>" in your template(regardless of "short_open_tag"), 
-      so comes a option named "short_tag",  you can switch this off 
+      "<?=$var?>" in your template(regardless of "short_open_tag"),
+      so comes a option named "short_tag",  you can switch this off
       to prevent use short_tag in template.
       ]]>
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>

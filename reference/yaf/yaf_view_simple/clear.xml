@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>Yaf_View_Simple::clear</methodname>
    <methodparam choice="opt"><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    clear assigned variable
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,12 +24,12 @@
    <varlistentry>
     <term><parameter>name</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        assigned variable name
-     </para>
-     <para>
+     </simpara>
+     <simpara>
       if empty, will clear all assigned variables
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -67,8 +67,8 @@ class IndexController extends Yaf_Controller_Abstract {
    <member><methodname>Yaf_View_Simple::assignRef</methodname></member>
    <member><methodname>Yaf_View_Interface::assign</methodname></member>
    <member><methodname>Yaf_View_Simple::__set</methodname></member>
-  </simplelist>                       
- </refsect1>  
+  </simplelist>
+ </refsect1>
 
 </refentry>
 

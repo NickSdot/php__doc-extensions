@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>config_file</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>section</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
     <classname>Yaf_Config_Ini</classname> constructor
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
    <varlistentry>
     <term><parameter>config_file</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       path to an INI configure file
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>section</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       which section in that INI file you want to be parsed
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
 

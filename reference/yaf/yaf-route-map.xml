@@ -11,7 +11,7 @@
 <!-- {{{ Yaf_Route_Map intro -->
   <section xml:id="yaf-route-map.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
      <classname>Yaf_Route_Map</classname> is a built-in route, it simply
      convert a URI endpoint (that part of the URI which comes after the
      base URI: see <methodname>Yaf_Request_Abstract::setBaseUri</methodname>)
@@ -20,15 +20,15 @@
      A => controller A.
      A/B/C => controller A_B_C.
      A/B/C/D/E => controller A_B_C_D_E.
-    </para>
+    </simpara>
 
-    <para>
+    <simpara>
      If the second parameter of
      <methodname>Yaf_Route_Map::__construct</methodname> is specified, then
      only the part before delimiter of URI will used to routing, the part after
      it is used to routing request parameters (see the example section of
      <methodname>Yaf_Route_Map::__construct</methodname>).
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -44,7 +44,7 @@
      <ooclass>
       <classname>Yaf_Route_Map</classname>
      </ooclass>
-     
+
      <oointerface>
       <interfacename>Yaf_Route_Interface</interfacename>
      </oointerface>
@@ -60,7 +60,7 @@
      <varname linkend="yaf-route-map.props.delimiter">_delimiter</varname>
     </fieldsynopsis>
 
-    
+
     <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-route-map')/db:refentry/db:refsect1[@role='description']/descendant::db:constructorsynopsis[not(@role='procedural')])" />
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-route-map')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[1])" />
@@ -69,7 +69,7 @@
 
   </section>
 
-  
+
 <!-- {{{ Yaf_Route_Map properties -->
   <section xml:id="yaf-route-map.props">
    &reftitle.properties;
@@ -77,13 +77,13 @@
     <varlistentry xml:id="yaf-route-map.props.ctl-router">
      <term><varname>_ctl_router</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-route-map.props.delimiter">
      <term><varname>_delimiter</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
    </variablelist>

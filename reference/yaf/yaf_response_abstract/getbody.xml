@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>Yaf_Response_Abstract::getBody</methodname>
    <methodparam choice="opt"><type>string</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Retrieve a exists content
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,9 +29,9 @@
       will be used. if you pass in a &null;, then all contents will be returned
       as an array
       <note>
-       <para>
+       <simpara>
        this parameter is introduced as of 2.2.0
-      </para>
+      </simpara>
       </note>
      </para>
     </listitem>
@@ -41,9 +41,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -57,7 +57,7 @@ $response = new Yaf_Response_Http();
 
 $response->setBody("Hello")->setBody(" World", "footer");
 
-var_dump($response->getBody()); //default 
+var_dump($response->getBody()); //default
 var_dump($response->getBody(Yaf_Response_Abstract::DEFAULT_BODY)); //same as above
 var_dump($response->getBody("footer"));
 var_dump($response->getBody(NULL)); //get all

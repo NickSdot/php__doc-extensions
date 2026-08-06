@@ -11,11 +11,11 @@
 <!-- {{{ Yaf_Registry intro -->
   <section xml:id="yaf-registry.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
      All methods of <classname>Yaf_Registry</classname> declared as static, making it
      unversally accessible. This provides the ability to get or set any custom
      data from anyway in your code as necessary.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -43,7 +43,7 @@
      <varname linkend="yaf-registry.props.entries">_entries</varname>
     </fieldsynopsis>
 
-    
+
     <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-registry')/db:refentry/db:refsect1[@role='description']/descendant::db:constructorsynopsis[not(@role='procedural')])" />
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-registry')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[1])" />
@@ -52,7 +52,7 @@
 
   </section>
 
-  
+
 <!-- {{{ Yaf_Registry properties -->
   <section xml:id="yaf-registry.props">
    &reftitle.properties;
@@ -60,13 +60,13 @@
     <varlistentry xml:id="yaf-registry.props.instance">
      <term><varname>_instance</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-registry.props.entries">
      <term><varname>_entries</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
    </variablelist>

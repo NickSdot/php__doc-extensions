@@ -11,10 +11,10 @@
 <!-- {{{ Yaf_Route_Rewrite intro -->
   <section xml:id="yaf-route-rewrite.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
      For usage, please see the example section of
      <methodname>Yaf_Route_Rewrite::__construct</methodname>
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -30,12 +30,12 @@
      <ooclass>
       <classname>Yaf_Route_Rewrite</classname>
      </ooclass>
-     
+
      <ooclass>
       <modifier>extends</modifier>
       <classname>Yaf_Route_Interface</classname>
      </ooclass>
-     
+
      <oointerface>
       <interfacename>Yaf_Route_Interface</interfacename>
      </oointerface>
@@ -55,11 +55,11 @@
      <varname linkend="yaf-route-rewrite.props.verify">_verify</varname>
     </fieldsynopsis>
 
-    
+
     <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-route-rewrite')/db:refentry/db:refsect1[@role='description']/descendant::db:constructorsynopsis[not(@role='procedural')])" />
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-route-rewrite')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[1])" />
-    
+
     <classsynopsisinfo role="comment">&InheritedMethods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-route-interface')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[1])" />
 
@@ -68,7 +68,7 @@
 
   </section>
 
-  
+
 <!-- {{{ Yaf_Route_Rewrite properties -->
   <section xml:id="yaf-route-rewrite.props">
    &reftitle.properties;
@@ -76,19 +76,19 @@
     <varlistentry xml:id="yaf-route-rewrite.props.route">
      <term><varname>_route</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-route-rewrite.props.default">
      <term><varname>_default</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-route-rewrite.props.verify">
      <term><varname>_verify</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
    </variablelist>

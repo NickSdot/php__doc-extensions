@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam choice="opt"><type>string</type><parameter>default</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Retrieve POST variable
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,18 +25,18 @@
    <varlistentry>
     <term><parameter>name</parameter></term>
     <listitem>
-     <para>
-       the variable name   
-     </para>
+     <simpara>
+       the variable name
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>default</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       if this parameter is provide, this will be returned if the varialbe can
       not be found
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

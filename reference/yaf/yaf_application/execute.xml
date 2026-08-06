@@ -14,10 +14,10 @@
    <methodparam><type>callable</type><parameter>entry</parameter></methodparam>
    <methodparam rep="repeat"><type>string</type><parameter>args</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    This method is typically used to run Yaf_Application in a crontab work.
    Make the crontab work can also use the autoloader and Bootstrap mechanism.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
    <varlistentry>
     <term><parameter>entry</parameter></term>
     <listitem>
-     <para>
-       a valid callback  
-     </para>
+     <simpara>
+       a valid callback
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>args</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       parameters will pass to the callback
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">

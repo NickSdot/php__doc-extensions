@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>Yaf_Application</type><methodname>Yaf_Application::clearLastError</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
 
 
@@ -28,9 +28,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -44,8 +44,8 @@ function error_handler($errno, $errstr, $errfile, $errline) {
    Yaf_Application::app()->clearLastError();
    var_dump(Yaf_Application::app()->getLastErrorNo());
 }
- 
-$config = array(                   
+
+$config = array(
  "application" => array(
    "directory" => "/tmp/notexists",
      "dispatcher" => array(
@@ -53,7 +53,7 @@ $config = array(
       ),
   ),
 );
-  
+
 $app = new Yaf_Application($config);
 $app->getDispatcher()->setErrorHandler("error_handler", E_RECOVERABLE_ERROR);
 $app->run();

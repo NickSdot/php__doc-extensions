@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam><type>mixed</type><parameter role="reference">value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     unlike <methodname>Yaf_View_Simple::assign</methodname>, this method
     assign a ref value to engine.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -34,9 +34,9 @@
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       mixed value
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -61,7 +61,7 @@ class IndexController extends Yaf_Controller_Abstract {
         $value = "bar";
         $this->getView()->assign("foo", $value);
 
-        /* plz note that there was a bug before Yaf 2.1.4, 
+        /* plz note that there was a bug before Yaf 2.1.4,
          * which make following output "bar";
          */
         $dummy = $this->getView()->render("index/index.phtml");
@@ -82,7 +82,7 @@ class IndexController extends Yaf_Controller_Abstract {
 <html>
  <head>
   <title><?php echo $foo;  $foo = "changed"; ?></title>
- </head>  
+ </head>
 <body>
 </body>
 </html>
@@ -103,8 +103,8 @@ changed
   <simplelist>
    <member><methodname>Yaf_View_Simple::assign</methodname></member>
    <member><methodname>Yaf_View_Simple::__set</methodname></member>
-  </simplelist>                       
- </refsect1>  
+  </simplelist>
+ </refsect1>
 
 </refentry>
 

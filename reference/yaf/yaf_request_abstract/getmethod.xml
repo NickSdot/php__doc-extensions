@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>string</type><methodname>Yaf_Request_Abstract::getMethod</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return a string, like "POST", "GET" etc.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

@@ -14,14 +14,14 @@
    <methodparam><type>call</type><parameter>callback</parameter></methodparam>
    <methodparam><type>int</type><parameter>error_types</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Set error handler for Yaf. when <link
      linkend="configuration.yaf.dispatcher.throwexception">application.dispatcher.throwException</link>
     is off, Yaf will trigger catchable error while unexpected errors occurred.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Thus, this error handler will be called while the error raise.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,17 +30,17 @@
    <varlistentry>
     <term><parameter>callback</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       A callable callback
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>error_types</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -48,9 +48,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

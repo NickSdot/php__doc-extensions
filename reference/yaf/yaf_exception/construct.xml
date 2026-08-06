@@ -13,9 +13,9 @@
    <modifier>public</modifier> <methodname>Yaf_Exception::__construct</methodname>
    <void />
   </constructorsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
   &warn.undocumented.func;
 
@@ -28,9 +28,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
 

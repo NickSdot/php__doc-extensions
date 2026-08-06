@@ -13,12 +13,12 @@
    <modifier>public</modifier> <methodname>Yaf_Route_Supervar::__construct</methodname>
    <methodparam><type>string</type><parameter>supervar_name</parameter></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
    <classname>Yaf_Route_Supervar</classname> is similar with
    <classname>Yaf_Route_Static</classname>, the difference is
    <classname>Yaf_Route_Supervar</classname> will look for path info in query
    string, and the parameter <varname>supervar_name</varname> is the key.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
    <varlistentry>
     <term><parameter>supervar_name</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       The name of key.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -37,8 +37,8 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-  </para>
+  <simpara>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -87,8 +87,8 @@
    <member><classname>Yaf_Route_Simple</classname></member>
    <member><classname>Yaf_Route_Rewrite</classname></member>
    <member><classname>Yaf_Route_Map</classname></member>
-  </simplelist>                       
- </refsect1>  
+  </simplelist>
+ </refsect1>
 
 </refentry>
 

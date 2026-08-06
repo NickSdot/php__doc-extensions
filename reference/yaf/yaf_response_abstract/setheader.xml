@@ -15,9 +15,9 @@
    <methodparam><type>string</type><parameter>value</parameter></methodparam>
    <methodparam choice="opt"><type>bool</type><parameter>replace</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Used to send a HTTP header
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="seealso">

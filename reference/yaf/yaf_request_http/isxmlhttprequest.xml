@@ -16,10 +16,10 @@
   <para>
     Check the request whether it is a Ajax Request.
     <note>
-     <para>
+     <simpara>
       This method depends on the request header: HTTP_X_REQUESTED_WITH, some
       Javascript library doesn't set this header while doing Ajax request
-     </para>
+     </simpara>
     </note>
   </para>
  </refsect1>
@@ -31,9 +31,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    boolean
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>Yaf_View_Interface</type><methodname>Yaf_Controller_Abstract::getView</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
    retrieve view engine
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
 

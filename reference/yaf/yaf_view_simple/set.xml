@@ -14,10 +14,10 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
-    This is a alternative and easier way to 
+  <simpara>
+    This is a alternative and easier way to
     <methodname>Yaf_View_Simple::assign</methodname>.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -26,17 +26,17 @@
    <varlistentry>
     <term><parameter>name</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        A string value name.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       Mixed value.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -44,9 +44,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -72,8 +72,8 @@ class IndexController extends Yaf_Controller_Abstract {
   <simplelist>
    <member><methodname>Yaf_View_Simple::assignRef</methodname></member>
    <member><methodname>Yaf_View_Interface::assign</methodname></member>
-  </simplelist>                       
- </refsect1>  
+  </simplelist>
+ </refsect1>
 
 </refentry>
 

@@ -11,9 +11,9 @@
 <!-- {{{ Yaf_Response_Abstract intro -->
   <section xml:id="yaf-response-abstract.intro">
    &reftitle.intro;
-   <para>
+   <simpara>
 
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -71,19 +71,19 @@
     <varlistentry xml:id="yaf-response-abstract.props.header">
      <term><varname>_header</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-response-abstract.props.body">
      <term><varname>_body</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-response-abstract.props.sendheader">
      <term><varname>_sendheader</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
    </variablelist>

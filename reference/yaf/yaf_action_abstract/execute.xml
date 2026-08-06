@@ -18,10 +18,10 @@
    of an action.
    <methodname>Yaf_Action_Abstract::execute</methodname> may have agruments.
    <note>
-    <para>
+    <simpara>
      The value retrived from the request is not safe. you should do some
      filtering work before you use it.
-    </para>
+    </simpara>
    </note>
   </para>
  </refsect1>
@@ -32,9 +32,9 @@
    <varlistentry>
     <term><parameter>args</parameter></term>
     <listitem>
-     <para>
+     <simpara>
 
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -42,9 +42,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
@@ -54,7 +54,7 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-/** 
+/**
  * A controller example
  */
 class ProductController extends Yaf_Controller_Abstract {
@@ -71,7 +71,7 @@ class ProductController extends Yaf_Controller_Abstract {
    <programlisting role="php">
 <![CDATA[
 <?php
-/** 
+/**
  * ListAction
  */
 class ListAction extends Yaf_Action_Abstract {
@@ -87,7 +87,7 @@ class ListAction extends Yaf_Action_Abstract {
    <screen>
 <![CDATA[
 /**
- * Now assuming we are using the Yaf_Route_Static route 
+ * Now assuming we are using the Yaf_Route_Static route
  * for request: http://yourdomain/product/list/name/yaf/id/22
  * will result:
  */

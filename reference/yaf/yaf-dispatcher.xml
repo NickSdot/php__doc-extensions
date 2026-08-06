@@ -11,18 +11,18 @@
 <!-- {{{ Yaf_Dispatcher intro -->
   <section xml:id="yaf-dispatcher.intro">
    &reftitle.intro;
-   <para>
-    <classname>Yaf_Dispatcher</classname> purpose is to initialize 
+   <simpara>
+    <classname>Yaf_Dispatcher</classname> purpose is to initialize
     the request environment, route the incoming request, and then dispatch
-    any discovered actions; it aggregates any responses and returns them 
+    any discovered actions; it aggregates any responses and returns them
     when the process is complete.
-   </para>
-   <para>
-    <classname>Yaf_Dispatcher</classname> also implements the Singleton pattern, 
+   </simpara>
+   <simpara>
+    <classname>Yaf_Dispatcher</classname> also implements the Singleton pattern,
     meaning only a single instance of it may be available at any given time. This
     allows it to also act as a registry on which the other objects in the
     dispatch process may draw.
-   </para>
+   </simpara>
   </section>
 <!-- }}} -->
 
@@ -88,7 +88,7 @@
      <varname linkend="yaf-dispatcher.props.default-action">_default_action</varname>
     </fieldsynopsis>
 
-    
+
     <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-dispatcher')/db:refentry/db:refsect1[@role='description']/descendant::db:constructorsynopsis[not(@role='procedural')])" />
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.yaf-dispatcher')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[1])" />
@@ -97,7 +97,7 @@
 
   </section>
 
-  
+
 <!-- {{{ Yaf_Dispatcher properties -->
   <section xml:id="yaf-dispatcher.props">
    &reftitle.properties;
@@ -105,67 +105,67 @@
     <varlistentry xml:id="yaf-dispatcher.props.router">
      <term><varname>_router</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-dispatcher.props.view">
      <term><varname>_view</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-dispatcher.props.request">
      <term><varname>_request</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-dispatcher.props.plugins">
      <term><varname>_plugins</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-dispatcher.props.instance">
      <term><varname>_instance</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-dispatcher.props.auto-render">
      <term><varname>_auto_render</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-dispatcher.props.return-response">
      <term><varname>_return_response</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-dispatcher.props.instantly-flush">
      <term><varname>_instantly_flush</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-dispatcher.props.default-module">
      <term><varname>_default_module</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-dispatcher.props.default-controller">
      <term><varname>_default_controller</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="yaf-dispatcher.props.default-action">
      <term><varname>_default_action</varname></term>
      <listitem>
-      <para></para>
+      <simpara></simpara>
      </listitem>
     </varlistentry>
    </variablelist>

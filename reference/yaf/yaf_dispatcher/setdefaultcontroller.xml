@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>Yaf_Dispatcher</type><methodname>Yaf_Dispatcher::setDefaultController</methodname>
    <methodparam><type>string</type><parameter>controller</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
 
 
 
@@ -27,9 +27,9 @@
    <varlistentry>
     <term><parameter>controller</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -37,9 +37,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
 

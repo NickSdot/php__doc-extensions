@@ -13,10 +13,10 @@
    <modifier>public</modifier> <type>array</type><methodname>Yaf_Application::getModules</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
     Get the modules list defined in config, if no one defined, there will
     always be a module named "Index".
-  </para>
+  </simpara>
 
 
 
@@ -29,9 +29,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
 
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="examples">
