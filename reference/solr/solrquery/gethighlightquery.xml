@@ -11,10 +11,10 @@
    <modifier>public</modifier> <type>string</type><methodname>SolrQuery::getHighlightQuery</methodname>
    <void/>
   </methodsynopsis>
-  <para>
+  <simpara>
    Returns previously set highlight query.
    This parameter allows you to highlight different terms or fields than those being used to retrieve documents.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current SolrHighlightQuery string, or null if not set.
-  </para>
+  </simpara>
  </refsect1>
 </refentry>
 <!-- Keep this comment at the end of the file

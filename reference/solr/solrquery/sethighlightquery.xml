@@ -11,13 +11,13 @@
    <modifier>public</modifier> <type>SolrQuery</type><methodname>SolrQuery::setHighlightQuery</methodname>
    <methodparam><type>string</type><parameter>q</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    A query to use for highlighting.
    This parameter allows one to highlight different terms or fields than those being used to retrieve documents.
-  </para>
+  </simpara>
 
-  <para>Default value when not set: the value of the request's q parameter</para>
-  <para>Solr Parameter reference: hl.q</para>
+  <simpara>Default value when not set: the value of the request's q parameter</simpara>
+  <simpara>Solr Parameter reference: hl.q</simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -27,9 +27,9 @@
     <varlistentry>
      <term><parameter>q</parameter></term>
      <listitem>
-      <para>
+      <simpara>
        Highlight Query
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
    </variablelist>
@@ -38,9 +38,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Returns the current <classname>SolrQuery</classname> object, if the return value is used.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>
