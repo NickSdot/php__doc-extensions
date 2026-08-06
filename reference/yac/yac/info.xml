@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>array</type><methodname>Yac::info</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
     Get status of cache system
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,11 +25,11 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Return an array, consistent with:
    "memory_size", "slots_memory_size", "values_memory_size", "segment_size", "segment_num",
    "miss", "hits", "fails", "kicks", "recycles", "slots_size", "slots_used"
-  </para>
+  </simpara>
  </refsect1>
 
 

@@ -14,9 +14,9 @@
    <methodparam><type class="union"><type>string</type><type>array</type></type><parameter>keys</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>ttl</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    remove items from cache
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
    <varlistentry>
     <term><parameter>keys</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       string key, or array of multiple keys to be removed
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>ttl</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       if delay is set, delete will mark the items to be invalid in ttl second.
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   
-  </para>
+  <simpara>
+
+  </simpara>
  </refsect1>
 
 

@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter>keys</parameter></methodparam>
    <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     store a item into cache
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,17 +25,17 @@
    <varlistentry>
     <term><parameter>keys</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        &string; key
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       mixed value, All php value type could be stored except &resource;
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -43,9 +43,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    Always return the value self
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

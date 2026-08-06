@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>Yac::flush</methodname>
    <void />
   </methodsynopsis>
-  <para>
+  <simpara>
     Remove all cached values
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,9 +25,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
-   bool, always true 
-  </para>
+  <simpara>
+   bool, always true
+  </simpara>
  </refsect1>
 
 

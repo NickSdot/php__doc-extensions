@@ -19,9 +19,9 @@
    <modifier>public</modifier> <type>bool</type><methodname>Yac::add</methodname>
    <methodparam><type>array</type><parameter>key_vals</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Added a item into cache.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -30,25 +30,25 @@
    <varlistentry>
     <term><parameter>keys</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        &string; key
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>value</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       mixed value, All php value type could be stored except &resource;
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>ttl</parameter></term>
     <listitem>
-     <para>
+     <simpara>
       expire time
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -57,7 +57,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   &boolean;, &true; on success, &false; on failure 
+   &boolean;, &true; on success, &false; on failure
    <note>
     <para>
      <methodname>Yac::add</methodname> may fail if cas lock could not obtain,
@@ -68,7 +68,7 @@
        <![CDATA[
        while(!$yac->set("key", "value"));
        ]]>
-      </programlisting> 
+      </programlisting>
      </example>
     </para>
    </note>

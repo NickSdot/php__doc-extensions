@@ -13,9 +13,9 @@
    <modifier>public</modifier> <methodname>Yac::__construct</methodname>
    <methodparam choice="opt"><type>string</type><parameter>prefix</parameter><initializer>""</initializer></methodparam>
   </constructorsynopsis>
-  <para>
+  <simpara>
     prefix is used to prepended to keys, this could be used to avoiding conflicts between apps.
-  </para>
+  </simpara>
 
  </refsect1>
 
@@ -25,9 +25,9 @@
    <varlistentry>
     <term><parameter>prefix</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        &string; prefix
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -39,18 +39,18 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   
+
   </para>
  </refsect1>
  -->
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws an <classname>Exception</classname> if Yac is not enabled. Throws 
-   <classname>Exception</classname> if <parameter>prefix</parameter> exceeds 
+  <simpara>
+   Throws an <exceptionname>Exception</exceptionname> if Yac is not enabled. Throws
+   <exceptionname>Exception</exceptionname> if <parameter>prefix</parameter> exceeds
    max key length of 48 (<constant>YAC_MAX_KEY_LEN</constant>) bytes.
-  </para>
+  </simpara>
  </refsect1>
 
 </refentry>

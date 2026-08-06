@@ -13,9 +13,9 @@
    <modifier>public</modifier> <type>mixed</type><methodname>Yac::__get</methodname>
    <methodparam><type>string</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
     Retrieve values from cache
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -24,9 +24,9 @@
    <varlistentry>
     <term><parameter>key</parameter></term>
     <listitem>
-     <para>
+     <simpara>
        &string; key
-     </para>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -34,9 +34,9 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
    mixed on success, &null; on failure
-  </para>
+  </simpara>
  </refsect1>
 
 
