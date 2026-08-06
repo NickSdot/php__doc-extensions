@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision$ --> 
+<!-- $Revision$ -->
 
 <refentry xml:id="function.taint" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
@@ -14,9 +14,9 @@
    <methodparam><type>string</type><parameter role="reference">string</parameter></methodparam>
    <methodparam rep="repeat"><type>string</type><parameter>strings</parameter></methodparam>
   </methodsynopsis>
-  <para>
+  <simpara>
    Make a string tainted. This is used for testing purpose only.
-  </para>
+  </simpara>
  </refsect1>
 
  <refsect1 role="parameters">
@@ -25,16 +25,16 @@
    <varlistentry>
     <term><parameter>string</parameter></term>
     <listitem>
-     <para>
-      
-     </para>
+     <simpara>
+
+     </simpara>
     </listitem>
    </varlistentry>
    <varlistentry>
     <term><parameter>strings</parameter></term>
     <listitem>
-     <para>
-     </para>
+     <simpara>
+     </simpara>
     </listitem>
    </varlistentry>
   </variablelist>
@@ -42,10 +42,10 @@
 
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
-  <para>
+  <simpara>
       Return TRUE if the transformation is done. Always return TRUE if the taint
-      extension is not enabled.    
-  </para>
+      extension is not enabled.
+  </simpara>
  </refsect1>
 
 

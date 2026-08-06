@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Revision$ -->
- 
+
 <section xml:id="taint.configuration" xmlns="http://docbook.org/ns/docbook">
  &reftitle.runtime;
  &extension.runtime;
@@ -44,9 +44,9 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        Whether enable the taint.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="ini.taint.error-level">
@@ -55,10 +55,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
        the error type which taint will report as when taint find a tainted
        string.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 

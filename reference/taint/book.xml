@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision$ --> 
+<!-- $Revision$ -->
 
 <book xml:id="book.taint" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <?phpdoc extension-membership="pecl" ?>
@@ -8,16 +8,16 @@
 
  <preface xml:id="intro.taint">
   &reftitle.intro;
-  <para>
+  <simpara>
    Taint is an extension, which is used for detecting XSS codes (tainted
    string).
    And also can be used to spot sql injection vulnerabilities, and shell
    inject, etc.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    When taint is enabled, if you pass a tainted string (comes from <varname>$_GET</varname>,
    <varname>$_POST</varname> or <varname>$_COOKIE</varname>) to some functions, taint will warn you about that.
-  </para>
+  </simpara>
   <example>
    <title><function>Taint</function>example</title>
    <programlisting role="php">
