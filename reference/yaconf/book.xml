@@ -8,28 +8,28 @@
 
  <preface xml:id="intro.yaconf">
   &reftitle.intro;
-  <para>
+  <simpara>
    <literal>Yet Another Configurations Container</literal>
    (<acronym>Yaconf</acronym>) is a configurations container,
    it parses <literal>INI</literal> files, and store the result
    in PHP when PHP is started, the result lives with the
    whole PHP lifecycle.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Yaconf stores all configurations as
    interned string or immutable array, which means they are
    not refcounted-able, thus when you retrieving configurations
    from <acronym>Yaconf</acronym>, it could be considered as zero-copy, very fast.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Yaconf supports sections and sections
    inheritance in <literal>INI</literal> files. If PHP is built as non-ZTS build,
    Yaconf also supports automatically reloading after <literal>INI</literal> files
    are changed.
-  </para>
-  <para>
+  </simpara>
+  <simpara>
    Yaconf requires PHP 7.0 or greater.
-  </para>
+  </simpara>
   <example>
    <title>INI example</title>
    <programlisting role="ini">

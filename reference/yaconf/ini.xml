@@ -44,10 +44,10 @@
       <type>int</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
         In which interval Yaconf will detect ini file's change(by directory's mtime),
         if it is set to zero, you have to restart php to reloading configurations.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
     <varlistentry xml:id="ini.yaconf.directory">
@@ -56,9 +56,9 @@
       <type>string</type>
      </term>
      <listitem>
-      <para>
+      <simpara>
         Path to directory which all INI configuration files are placed in.
-      </para>
+      </simpara>
      </listitem>
     </varlistentry>
 
